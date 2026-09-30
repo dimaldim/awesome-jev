@@ -199,7 +199,7 @@ belongs in config, reviewed against measured outcomes. See
 [`../examples/README.md`](../examples/README.md).
 
 <!-- catalogued-human-escalation:start -->
-**Human escalation** in the catalogue: 68 rows, [each listed with its caveats](by-pattern/human-escalation.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=human-escalation&lang=en).
+**Human escalation** in the catalogue: 69 rows, [each listed with its caveats](by-pattern/human-escalation.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=human-escalation&lang=en).
 <!-- catalogued-human-escalation:end -->
 
 ---
@@ -282,7 +282,7 @@ and date comparison are named weak spots — resolve and validate dates in code
 after the model names the parts.
 
 <!-- catalogued-data-extraction:start -->
-**Structured extraction** in the catalogue: 16 rows, [each listed with its caveats](by-pattern/data-extraction.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=data-extraction&lang=en).
+**Structured extraction** in the catalogue: 17 rows, [each listed with its caveats](by-pattern/data-extraction.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=data-extraction&lang=en).
 <!-- catalogued-data-extraction:end -->
 
 ---
@@ -300,7 +300,7 @@ lets you fall back to a coarser level instead of guessing a fine one.
 **When not to:** when your taxonomy has overlapping leaves. Fix the taxonomy.
 
 <!-- catalogued-classification:start -->
-**Classification** in the catalogue: 119 rows, [each listed with its caveats](by-pattern/classification.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=classification&lang=en).
+**Classification** in the catalogue: 120 rows, [each listed with its caveats](by-pattern/classification.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=classification&lang=en).
 <!-- catalogued-classification:end -->
 
 ---
@@ -367,7 +367,7 @@ your "scale" is really unordered categories wearing a number.
 rankable, which makes this the pattern for populating review queues worst-first.
 
 <!-- catalogued-content-scoring:start -->
-**Content scoring** in the catalogue: 164 rows, [each listed with its caveats](by-pattern/content-scoring.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=en).
+**Content scoring** in the catalogue: 165 rows, [each listed with its caveats](by-pattern/content-scoring.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=en).
 <!-- catalogued-content-scoring:end -->
 
 ---

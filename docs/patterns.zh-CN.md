@@ -142,7 +142,7 @@
 **注：** 挑选阈值是政策决定，不是建模决定。它应该放在配置里，并对照实测结果来复核。见 [`../examples/README.md`](../examples/README.md)。
 
 <!-- catalogued-human-escalation:start -->
-目录中的**人工升级**：共 68 条，[逐条列出并附警示](by-pattern/human-escalation.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=human-escalation&lang=zh)。
+目录中的**人工升级**：共 69 条，[逐条列出并附警示](by-pattern/human-escalation.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=human-escalation&lang=zh)。
 <!-- catalogued-human-escalation:end -->
 
 ---
@@ -206,7 +206,7 @@
 **何时不该用：** 没有任何东西能先列举出候选时。另外请注意，算术和日期比较是明确列出的弱项 —— 让模型先认出各个部分，再在代码里解析和校验日期。
 
 <!-- catalogued-data-extraction:start -->
-目录中的**结构化抽取**：共 16 条，[逐条列出并附警示](by-pattern/data-extraction.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=data-extraction&lang=zh)。
+目录中的**结构化抽取**：共 17 条，[逐条列出并附警示](by-pattern/data-extraction.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=data-extraction&lang=zh)。
 <!-- catalogued-data-extraction:end -->
 
 ---
@@ -222,7 +222,7 @@
 **何时不该用：** 当你的分类体系里有互相重叠的叶子节点时。先修好分类体系。
 
 <!-- catalogued-classification:start -->
-目录中的**分类**：共 119 条，[逐条列出并附警示](by-pattern/classification.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=classification&lang=zh)。
+目录中的**分类**：共 120 条，[逐条列出并附警示](by-pattern/classification.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=classification&lang=zh)。
 <!-- catalogued-classification:end -->
 
 ---
@@ -280,7 +280,7 @@
 **注：** 只支持 2–10 级。带校准置信度的有序量表可以排序，这让它成为按最差优先填充复核队列的那个模式。
 
 <!-- catalogued-content-scoring:start -->
-目录中的**内容评分**：共 164 条，[逐条列出并附警示](by-pattern/content-scoring.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=zh)。
+目录中的**内容评分**：共 165 条，[逐条列出并附警示](by-pattern/content-scoring.zh-CN.md) · [站点筛选](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=zh)。
 <!-- catalogued-content-scoring:end -->
 
 ---

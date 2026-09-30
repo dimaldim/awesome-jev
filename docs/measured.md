@@ -4,7 +4,7 @@
 
 Independent measurement reports in the catalogue, including **negative results** that help explain where an approach fails. These are the original authors' measurements; this repository has not independently reproduced them. Check each report's dataset, method and model version before comparing results.
 
-Every independent measurement report and negative result in the catalogue — 72 rows — with every note and caveat tag, the negative results first. [The README](../README.md#measured-not-claimed) shows those, then the picks of the curated [independent reports](https://kydlikebtc.github.io/awesome-jev/?collection=measured&lang=en) path and the first few others; [the site](https://kydlikebtc.github.io/awesome-jev/?indep=1&lang=en) lists the same rows and can filter them further.
+Every independent measurement report and negative result in the catalogue — 73 rows — with every note and caveat tag, the negative results first. [The README](../README.md#measured-not-claimed) shows those, then the picks of the curated [independent reports](https://kydlikebtc.github.io/awesome-jev/?collection=measured&lang=en) path and the first few others; [the site](https://kydlikebtc.github.io/awesome-jev/?indep=1&lang=en) lists the same rows and can filter them further.
 
 ★ gives a repository's GitHub stars as a band — ★10+, ★100+, ★1k+, ★10k+ and ★100k+; rows with no repository or under 10 stars show no band. Rows run official first, then with code, then by band, then by title. A band is a popularity signal, not a quality verdict; the exact count, as last read from GitHub, is in [`catalog.json`](../catalog.json) and on [the site](https://kydlikebtc.github.io/awesome-jev/?lang=en).
 
@@ -58,13 +58,13 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation. Zero runtime deps, SQLite, MCP. Benchmarked retrieval with an opt-in TypeSafe Jev reranker.<br>
   <sub>`Benchmark` · ★100+ · kitfunso · `TS` · [call site](https://github.com/kitfunso/hippo-memory/blob/HEAD/src/rerankers/jev.ts), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
 
+- **[jev-arena](https://github.com/NanmiCoder/jev-arena)**<br>
+  An introduction to Jev with hands-on tests: Choice, Score and Noul turn natural language into typed judgements for classification, scoring and routing, compared with DeepSeek on comment labelling, speed and results, with CSV import, replay and offline reports.<br>
+  <sub>`Benchmark` · ★100+ · nanmicoder · `JS` · [call site](https://github.com/NanmiCoder/jev-arena/blob/HEAD/src/backends/jev.mjs), read 2026-09-24</sub>
+
 - **[jevbench](https://github.com/fstandhartinger/jevbench)**<br>
   JevBench v1 - a benchmark for Jev-class typed decision models: smart, cheap, fast, reliable, open. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ★100+ · fstandhartinger · `Py` · [call site](https://github.com/fstandhartinger/jevbench/blob/HEAD/jevbench/adapters/typesafe.py), read 2026-09-22</sub>
-
-- **[jev-arena](https://github.com/NanmiCoder/jev-arena)**<br>
-  An introduction to Jev with hands-on tests: Choice, Score and Noul turn natural language into typed judgements for classification, scoring and routing, compared with DeepSeek on comment labelling, speed and results, with CSV import, replay and offline reports.<br>
-  <sub>`Benchmark` · ★10+ · nanmicoder · `JS` · [call site](https://github.com/NanmiCoder/jev-arena/blob/HEAD/src/backends/jev.mjs), read 2026-09-24</sub>
 
 - **[jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks)**<br>
   Probability-aware evaluation for typed decision models: calibration, selective risk, latency, and reproducible benchmarks. <sub>(upstream description)</sub><br>
@@ -73,6 +73,10 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
 - **[jev-capability-atlas](https://github.com/Zaious/jev-capability-atlas)**<br>
   Independent, evidence-based map of when TypeSafe's Jev actually holds up vs. breaks down — real API-call receipts, not a leaderboard. 中文為主的雙語 repo。 <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ★10+ · zaious · `Py` · [call site](https://github.com/Zaious/jev-capability-atlas/blob/HEAD/scripts/common/jev_client.py), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
+
+- **[jev-dspy-lab](https://github.com/jmanhype/jev-dspy-lab)**<br>
+  Reproducible calibration and selective-risk benchmarks for Jev/TypeSafe decisions in DSPy workflows <sub>(upstream description)</sub><br>
+  <sub>`Benchmark` · ★10+ · jmanhype · `Py` · [call site](https://github.com/jmanhype/jev-dspy-lab/blob/HEAD/src/jev_dspy_lab/live.py), read 2026-09-22</sub>
 
 - **[jev-rag-benchmark](https://github.com/erendikmenn/jev-rag-benchmark)**<br>
   Reproducible benchmark for measuring Jev reranking quality, latency, and cost in RAG <sub>(upstream description)</sub><br>
@@ -83,6 +87,14 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   <sub>`Benchmark` · ★10+ · openroboto-ai · `Py` · [call site](https://github.com/openroboto-ai/jev-robot-control/blob/HEAD/incremental-comparisons/20260919-193012-198478-0/sources/incremental_policy.py), read 2026-09-24 · author's conclusion: inconclusive (author-stated, not reproduced here)</sub>
 
   **Caveats:** `one commit`
+
+- **[jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval)**<br>
+  Does a TypeSafe Jev rerank beat embedding search? Graded relevance eval (9,831 pairs, 164 zh/en queries) over the Agent Skills Hub catalog, with the judge-circularity bias measured. <sub>(upstream description)</sub><br>
+  <sub>`Benchmark` · ★10+ · zhuyansen · `Py` · [call site](https://github.com/zhuyansen/jev-search-rerank-eval/blob/HEAD/src/jse/openrouter.py), read 2026-09-24 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
+
+- **[pdf-race](https://github.com/goodrahstar/pdf-race)**<br>
+  Docling → Jev vs Docling → Gemini 3.8 Flash vs Gemini reading the PDF: same documents, one clock, scored against arXiv's own metadata <sub>(upstream description)</sub><br>
+  <sub>`Benchmark` · ★10+ · goodrahstar · `JS` · [call site](https://github.com/goodrahstar/pdf-race/blob/HEAD/lib/lanes.mjs), read 2026-09-24</sub>
 
 - **[smartmoney-cub](https://github.com/myc0576/SmartMoney-Cub)**<br>
   Read-only trading journal and review harness: Jev typed judgments, agent integration, and a reproducible finance benchmark. No orders, no advice. <sub>(upstream description)</sub><br>
@@ -117,7 +129,7 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   <sub>`Benchmark` · hanno-labs · `Py` · [call site](https://github.com/Hanno-Labs/decision-bench/blob/HEAD/src/decision_bench/models/jev_openrouter.py), read 2026-09-24</sub>
 
 - **[dsh-jev-verify](https://github.com/xienda/dsh-jev-verify)**<br>
-  Jev (TypeSafe System One) decision tools + live verification benchmark for DeepSeek Harness: jev_decision (choice/score/noul) and jev_verify, honest by design. <sub>(upstream description)</sub><br>
+  Jev (TypeSafe System One) decision tools + live verification benchmark for DeepSeek Harness: jev_decision (choice/score/noul) and jev_verify, honest by design. <sub>(earlier upstream description)</sub><br>
   <sub>`Benchmark` · xienda · `JS` · [call site](https://github.com/xienda/dsh-jev-verify/blob/HEAD/lib/index.js), read 2026-09-22</sub>
 
 - **[ego-jev-ultrafast](https://github.com/shikaizhong-design/ego-jev-ultrafast)**<br>
@@ -176,10 +188,6 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Experiments on Jev’s probability calibration, uncertainty reporting, and forecast probability preservation. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · kantahayashiai · `JS` · [call site](https://github.com/KantaHayashiAI/jev-does-not-play-dice/blob/HEAD/src/run.mjs), read 2026-09-24</sub>
 
-- **[jev-dspy-lab](https://github.com/jmanhype/jev-dspy-lab)**<br>
-  Reproducible calibration and selective-risk benchmarks for Jev/TypeSafe decisions in DSPy workflows <sub>(upstream description)</sub><br>
-  <sub>`Benchmark` · jmanhype · `Py` · [call site](https://github.com/jmanhype/jev-dspy-lab/blob/HEAD/src/jev_dspy_lab/live.py), read 2026-09-22</sub>
-
 - **[jev-enterprise-decision-fabric](https://github.com/ghubnab99/jev-enterprise-decision-fabric)**<br>
   Architecture for running many semantic decisions through one validated path, with a labelled 111-case benchmark comparing TypeSafe Jev against a Claude baseline, and a dashboard for inspecting any single decision. Experimental, not production. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ghubnab99 · `C#` · [call site](https://github.com/ghubnab99/jev-enterprise-decision-fabric/blob/HEAD/src/DecisionFabric.TypeSafe/TypeSafeClientOptions.cs), read 2026-09-22</sub>
@@ -205,8 +213,6 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
 - **[jev-exploration](https://github.com/SamuelSacco/jev-exploration)**<br>
   Jev (TypeSafe) exploratory thread: claim audit, live demos, and runnable code <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · samuelsacco · `Py` · [call site](https://github.com/SamuelSacco/jev-exploration/blob/HEAD/jevlab/client.py), read 2026-09-22</sub>
-
-  **Caveats:** `no licence`
 
 - **[jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench)**<br>
   Measured: asking TypeSafe Jev N questions in one call bills the state once. 2,976 real requests, raw data, exact billing check. <sub>(upstream description)</sub><br>
@@ -290,10 +296,6 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Benchmarking TypeSafe's Jev decision model as a cost-efficient LLM router on RouterArena <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · tokentrim · `Py` · [call site](https://github.com/TokenTrim/jev-routing-experiment/blob/HEAD/jev_router/jev.py), read 2026-09-22</sub>
 
-- **[jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval)**<br>
-  Does a TypeSafe Jev rerank beat embedding search? Graded relevance eval (9,831 pairs, 164 zh/en queries) over the Agent Skills Hub catalog, with the judge-circularity bias measured. <sub>(upstream description)</sub><br>
-  <sub>`Benchmark` · zhuyansen · `Py` · [call site](https://github.com/zhuyansen/jev-search-rerank-eval/blob/HEAD/src/jse/openrouter.py), read 2026-09-24 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
-
 - **[jev-secret-detection](https://github.com/teyhouse/jev-secret-detection)**<br>
   Measures how well TypeSafe's RLCD-Jev model spots real secret credentials in file snippets <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · teyhouse · `Py` · [call site](https://github.com/teyhouse/jev-secret-detection/blob/HEAD/main.py), read 2026-09-22</sub>
@@ -312,6 +314,14 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Open-source BYOK arena for Jev and other AI judges. Find failures, compare quality, cost, and latency. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · chenmingtang830 · `TS` · [call site](https://github.com/chenmingtang830/jevarena/blob/HEAD/jevjudge/providers.py), read 2026-09-24</sub>
 
+- **[jevbench](https://github.com/GautamTalksDev/jevbench)**<br>
+  Preregistered, bias-corrected test of TypeSafe Jev's calibration under human disagreement (ChaosNLI, 100 labels per item) <sub>(upstream description)</sub><br>
+  <sub>`Benchmark` · Gautam Khosla · `Py` · `choice` · `noul` · [call site](https://github.com/GautamTalksDev/jevbench/blob/HEAD/jevbench/clients/jev.py) · author's conclusion: mixed (author-stated, not reproduced here)</sub>
+
+  **Caveats:** `AI-written` · `self-submitted`
+
+  > Submitted by its own author, who discloses that this entry was written with Claude Code and that the repository was built with AI coding assistance; the flags record that disclosure. Choice is close to calibrated on 750 low-disagreement items but overconfident on 750 high-disagreement ones (confidence 0.807 vs 0.468 agreement; bias-corrected ECE gap 0.264 vs a preregistered 0.09); Noul (0.076) is inconclusive. Aggregates are committed, per-call responses are not.
+
 - **[jevsbistro](https://github.com/andrewsilber/JevsBistro)**<br>
   3D restaurant service simulator for benchmarking low-latency decision models <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · andrewsilber · `TS` · [call site](https://github.com/andrewsilber/JevsBistro/blob/HEAD/src/jev/protocol.ts), read 2026-09-22</sub>
@@ -327,10 +337,6 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
 - **[padflow-jev-evals](https://github.com/zsavage8/padflow-jev-evals)**<br>
   Typed-decision benchmark from PadFlow (land development SaaS): schemas, anonymized labeled rows, and a runner for confidence-calibrated models like TypeSafe Jev. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · zsavage8 · `Py` · [call site](https://github.com/zsavage8/padflow-jev-evals/blob/HEAD/scripts/run_baseline.py), read 2026-09-22</sub>
-
-- **[pdf-race](https://github.com/goodrahstar/pdf-race)**<br>
-  Docling → Jev vs Docling → Gemini 3.8 Flash vs Gemini reading the PDF: same documents, one clock, scored against arXiv's own metadata <sub>(upstream description)</sub><br>
-  <sub>`Benchmark` · goodrahstar · `JS` · [call site](https://github.com/goodrahstar/pdf-race/blob/HEAD/lib/lanes.mjs), read 2026-09-24</sub>
 
 - **[smoking-extraction-benchmark](https://github.com/vclic/smoking-extraction-benchmark)**<br>
   Synthetic smoking-history extraction benchmark comparing TypeSafe Jev and OpenAI structured outputs, with reproducible accuracy, cost, and latency results. <sub>(upstream description)</sub><br>

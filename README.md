@@ -12,7 +12,7 @@
   <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="docs/assets/readme-cover-en-light-mobile.svg">
   <source media="(max-width: 767px)" srcset="docs/assets/readme-cover-en-dark-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme-cover-en-dark.svg">
-  <img src="docs/assets/readme-cover-en-light.svg" alt="awesome-jev — Jev Decision Atlas: 1,208 public resources, 1,205 dated HTTP 2xx link records, and 1,074 call-site citation records. Counts describe saved records, not current link availability or passed runtime and performance tests." width="100%">
+  <img src="docs/assets/readme-cover-en-light.svg" alt="awesome-jev — Jev Decision Atlas: 1,210 public resources, 1,207 dated HTTP 2xx link records, and 1,076 call-site citation records. Counts describe saved records, not current link availability or passed runtime and performance tests." width="100%">
 </picture>
 </a>
 
@@ -126,11 +126,11 @@ All 18 patterns have at least one catalogue entry. Coverage does not imply runti
 | [Tool selection](#tool-selection) · **230** | [Intent routing](#intent-routing) · **35** |
 | [Context compaction](#context-compaction) · **34** | [Safety gating](#safety-gating) · **139** |
 | [Output validation](#output-validation) · **134** | [Retry control](#retry-control) · **7** |
-| [Human escalation](#human-escalation) · **68** | [Model routing](#model-routing) · **44** |
+| [Human escalation](#human-escalation) · **69** | [Model routing](#model-routing) · **44** |
 | [Speculative fan-out](#speculative-fan-out) · **32** | [Search & ranking](#search--ranking) · **64** |
-| [Structured extraction](#structured-extraction) · **16** | [Classification](#classification) · **119** |
+| [Structured extraction](#structured-extraction) · **17** | [Classification](#classification) · **120** |
 | [ML feature extraction](#ml-feature-extraction) · **8** | [Document triage](#document-triage) · **20** |
-| [Support triage](#support-triage) · **8** | [Content scoring](#content-scoring) · **164** |
+| [Support triage](#support-triage) · **8** | [Content scoring](#content-scoring) · **165** |
 | [Recommendation](#recommendation) · **1** | [Overview](#overview) · **451** |
 
 ## Measured, not claimed
@@ -197,15 +197,15 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation. Zero runtime deps, SQLite, MCP. Benchmarked retrieval with an opt-in TypeSafe Jev reranker.<br>
   <sub>`Benchmark` · ★100+ · kitfunso · `TS` · [call site](https://github.com/kitfunso/hippo-memory/blob/HEAD/src/rerankers/jev.ts), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
 
+- **[jev-arena](https://github.com/NanmiCoder/jev-arena)**<br>
+  An introduction to Jev with hands-on tests: Choice, Score and Noul turn natural language into typed judgements for classification, scoring and routing, compared with DeepSeek on comment labelling, speed and results, with CSV import, replay and offline reports.<br>
+  <sub>`Benchmark` · ★100+ · nanmicoder · `JS` · [call site](https://github.com/NanmiCoder/jev-arena/blob/HEAD/src/backends/jev.mjs), read 2026-09-24</sub>
+
 - **[jevbench](https://github.com/fstandhartinger/jevbench)**<br>
   JevBench v1 - a benchmark for Jev-class typed decision models: smart, cheap, fast, reliable, open. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ★100+ · fstandhartinger · `Py` · [call site](https://github.com/fstandhartinger/jevbench/blob/HEAD/jevbench/adapters/typesafe.py), read 2026-09-22</sub>
 
-- **[jev-arena](https://github.com/NanmiCoder/jev-arena)**<br>
-  An introduction to Jev with hands-on tests: Choice, Score and Noul turn natural language into typed judgements for classification, scoring and routing, compared with DeepSeek on comment labelling, speed and results, with CSV import, replay and offline reports.<br>
-  <sub>`Benchmark` · ★10+ · nanmicoder · `JS` · [call site](https://github.com/NanmiCoder/jev-arena/blob/HEAD/src/backends/jev.mjs), read 2026-09-24</sub>
-
-**10 of 72** shown: the negative results first, then the picks of the curated [independent reports](https://kydlikebtc.github.io/awesome-jev/?collection=measured&lang=en) path, in its order, then the first of the others in list order · [all 72 on one page, with every note →](docs/measured.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?indep=1&lang=en)
+**10 of 73** shown: the negative results first, then the picks of the curated [independent reports](https://kydlikebtc.github.io/awesome-jev/?collection=measured&lang=en) path, in its order, then the first of the others in list order · [all 73 on one page, with every note →](docs/measured.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?indep=1&lang=en)
 
 ## By decision pattern
 
@@ -343,21 +343,21 @@ _Decide which tool calls and results still matter so stale context can be droppe
   Trims long shell output before the model sees it, asking one Noul per chunk.<br>
   <sub>`Plugin` · ★100+ · tamaratran · `TS` · `noul` · [call site](https://github.com/tamaratran/jev-pruner/blob/HEAD/src/jev.ts), read 2026-09-22</sub>
 
+- **[Winnow](https://github.com/GhalebDweikat/winnow)**<br>
+  Context garbage collection for Claude Code: when Read, Bash or Grep dump a wall of output, each chunk is judged for relevance to the current task.<br>
+  <sub>`Plugin` · ★100+ · `Py` · `noul` · [call site](https://github.com/GhalebDweikat/winnow/blob/HEAD/sidecar/src/winnow/judge.py), read 2026-09-22</sub>
+
 - **[claude-jev](https://github.com/0x7067/claude-jev)**<br>
   Claude Code plugin: Jev for rule checks, verbatim compaction, and prompt routing <sub>(upstream description)</sub><br>
   <sub>`Plugin` · ★10+ · 0x7067 · `Py` · [call site](https://github.com/0x7067/claude-jev/blob/HEAD/scripts/jev.py), read 2026-09-22</sub>
 
-- **[save-token-jev-clean](https://github.com/IAmUnbounded/save-token-jev-clean)**<br>
-  Portable, Jev-guided context compaction for coding agents: instead of an LLM rewriting old context into a lossy summary, Jev decides which tool calls and results still matter, and user and assistant text is kept verbatim.<br>
-  <sub>`Plugin` · ★10+ · iamunbounded · `TS` · [call site](https://github.com/IAmUnbounded/save-token-jev-clean/blob/HEAD/src/cli.ts), read 2026-09-24</sub>
+- **[dsh-jev-tools](https://github.com/HorusJiang/dsh-jev-tools)**<br>
+  Jev judgment, not generation: prune long tool output, screen fetched pages for injected instructions, and gate completion claims inside DeepSeek Harness. <sub>(upstream description)</sub><br>
+  <sub>`Plugin` · ★10+ · horusjiang · `TS` · [call site](https://github.com/HorusJiang/dsh-jev-tools/blob/HEAD/src/config.ts), read 2026-09-24</sub>
 
-- **[Winnow](https://github.com/GhalebDweikat/winnow)**<br>
-  Context garbage collection for Claude Code: when Read, Bash or Grep dump a wall of output, each chunk is judged for relevance to the current task.<br>
-  <sub>`Plugin` · ★10+ · `Py` · `noul` · [call site](https://github.com/GhalebDweikat/winnow/blob/HEAD/sidecar/src/winnow/judge.py), read 2026-09-22</sub>
-
-- **[yoshi](https://github.com/compozy/yoshi)**<br>
-  Context-pruning proxy for Claude Code and Codex: Jev judges which history is still needed, measured not claimed. POC here now, heading soon into https://github.com/compozy/compozy <sub>(upstream description)</sub><br>
-  <sub>`Plugin` · ★10+ · compozy · `TS` · [call site](https://github.com/compozy/yoshi/blob/HEAD/benchmarks/jev-calibrate.ts), read 2026-09-22</sub>
+- **[fast-dev-compaction](https://github.com/leonaaardob/fast-dev-compaction)**<br>
+  Codex plugin: verbatim Jev-guided context restoration around session compaction. Port of tamaratran/fast-jev-compaction to Codex lifecycle hooks. <sub>(upstream description)</sub><br>
+  <sub>`Plugin` · ★10+ · leonaaardob · `TS` · [call site](https://github.com/leonaaardob/fast-dev-compaction/blob/HEAD/src/request.ts), read 2026-09-24</sub>
 
 **10 of 34** shown · [all 34 on one page →](docs/by-pattern/context-compaction.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=context-compaction&lang=en)
 
@@ -429,6 +429,10 @@ _Check a model's output against a rubric before it reaches a user._
   Open-source observability for AI agents. Find where your agents fail, dispatch your coding agent to fix it, and verify the fix against real traces. <sub>(upstream description)</sub><br>
   <sub>`Project` · ★1k+ · latitude-dev · `TS` · [call site](https://github.com/latitude-dev/latitude-llm/blob/HEAD/packages/platform/ai-jev/src/jev-shadow-decision-provider.ts), read 2026-09-22</sub>
 
+- **[reticle](https://github.com/reticlehq/reticle)**<br>
+  AI agents can generate code, but still struggle to understand what they build. Reticle brings Jev-style machine-native runtime perception to web & desktop applications. <sub>(upstream description)</sub><br>
+  <sub>`Project` · ★1k+ · reticlehq · `TS` · [call site](https://github.com/reticlehq/reticle/blob/HEAD/bench/harness/jev.mjs), read 2026-09-24</sub>
+
 - **[abide](https://github.com/coldteadotai/abide)**<br>
   Make your coding agent abide by all your project rules <sub>(upstream description)</sub><br>
   <sub>`Plugin` · ★100+ · coldteadotai · `TS` · [call site](https://github.com/coldteadotai/abide/blob/HEAD/packages/cli/src/lib/jev.ts), read 2026-09-24</sub>
@@ -437,27 +441,23 @@ _Check a model's output against a rubric before it reaches a user._
   The verifiable coding agent runtime. Define your coding agent's process in natural language with stages, checks, and approval gates instead of hoping it follows your instructions.<br>
   <sub>`Project` · ★100+ · bastani-inc · `TS` · [call site](https://github.com/bastani-inc/atomic/blob/HEAD/packages/ai/src/decision-models.generated.ts), read 2026-09-24</sub>
 
+- **[Canny](https://github.com/qkal/Canny)**<br>
+  Guards against a coding agent claiming it finished: reads tool output, the diff and test results, then judges whether the completion claim holds.<br>
+  <sub>`Project` · ★100+ · `TS` · `noul` · `score` · [call site](https://github.com/qkal/Canny/blob/HEAD/src/jev.ts), read 2026-09-22</sub>
+
 - **[fastbrowse](https://github.com/agent-labs-dev/fastbrowse)**<br>
   A fast browser agent: Jev picks each action from what is on the page, an LLM reads and plans, and every claim in an answer cites a quote from the page. <sub>(upstream description)</sub><br>
   <sub>`Project` · ★100+ · agent-labs-dev · `Py` · [call site](https://github.com/agent-labs-dev/fastbrowse/blob/HEAD/src/fastbrowse/clients/typesafe.py), read 2026-09-22</sub>
+
+- **[formanator](https://github.com/timrogers/formanator)**<br>
+  Submit Forma <https://joinforma.com> benefit claims from the command line and Model Context Protocol (MCP) clients, with support for AI-powered receipt analysis with an LLM or Jev <sub>(upstream description)</sub><br>
+  <sub>`Plugin` · ★100+ · timrogers · `Rs` · [call site](https://github.com/timrogers/formanator/blob/HEAD/src/typesafe.rs), read 2026-09-22</sub>
 
 - **[jev-eval-agent](https://github.com/vinilana/jev-eval-agent)**<br>
   An agent that routes evaluation work through typed decisions.<br>
   <sub>`Project` · ★100+ · vinilana · `TS` · [call site](https://github.com/vinilana/jev-eval-agent/blob/HEAD/agent/lib/jev-router.ts), read 2026-09-22</sub>
 
   **Caveats:** `no licence`
-
-- **[jev-mcp](https://github.com/jkudish/jev-mcp)**<br>
-  A ready-made judgement toolbox for agents: fact verification, content screening, semantic ranking, classification and extraction as separate tools.<br>
-  <sub>`Plugin` · ★100+ · `JS` · `choice` · `score` · `noul` · [call site](https://github.com/jkudish/jev-mcp/blob/HEAD/src/provider.ts), read 2026-09-22</sub>
-
-- **[jev-review](https://github.com/NiazMorshed2007/jev-review)**<br>
-  A local-first MCP plugin for continuous code-quality review by coding agents.<br>
-  <sub>`Plugin` · ★100+ · niazmorshed2007 · `TS` · [call site](https://github.com/NiazMorshed2007/jev-review/blob/HEAD/src/jev/client.ts), read 2026-09-22</sub>
-
-- **[JevRev](https://github.com/Alex314618-create/JevRev)**<br>
-  The decision layer beside an LLM: Jev filters plans, checks progress and keeps attention on work worth continuing, while the LLM supplies breadth and implementation.<br>
-  <sub>`Project` · ★100+ · alex314618-create · `TS` · [call site](https://github.com/Alex314618-create/JevRev/blob/HEAD/src/cli.ts), read 2026-09-24</sub>
 
 **10 of 134** shown · [all 134 on one page →](docs/by-pattern/output-validation.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=output-validation&lang=en)
 
@@ -466,6 +466,10 @@ _Check a model's output against a rubric before it reaches a user._
 ### Retry control
 
 _Decide whether a failed step is worth retrying._
+
+- **[jev-harness](https://github.com/ismaelsoilet/jev-harness)**<br>
+  Zero-dependency System One decision harness: 5 semantic gates saving frontier AI agent tokens on trivial errors & doom loops. Python + TypeScript + Rust. MCP-compatible. <sub>(upstream description)</sub><br>
+  <sub>`Plugin` · ★10+ · ismaelsoilet · `Py` · [call site](https://github.com/ismaelsoilet/jev-harness/blob/HEAD/src/jev_harness/client.py), read 2026-09-24</sub>
 
 - **[harnessjudge](https://github.com/ndolinschi/harnessjudge)**<br>
   Judge agent steps — ok / retry / escalate / stop via TypeSafe Jev <sub>(upstream description)</sub><br>
@@ -479,13 +483,9 @@ _Decide whether a failed step is worth retrying._
 
   **Caveats:** `AI-written`
 
-- **[jev-harness](https://github.com/ismaelsoilet/jev-harness)**<br>
-  Zero-dependency System One decision harness: 5 semantic gates saving frontier AI agent tokens on trivial errors & doom loops. Python + TypeScript + Rust. MCP-compatible. <sub>(upstream description)</sub><br>
-  <sub>`Plugin` · ismaelsoilet · `Py` · [call site](https://github.com/ismaelsoilet/jev-harness/blob/HEAD/src/jev_harness/client.py), read 2026-09-24</sub>
-
-- **[jev-reasoning-navigator](https://github.com/AndreuVM/jev-reasoning-navigator)**<br>
+- **[jev-reasoning-navigator](https://github.com/AndreuVM/praxeon)**<br>
   JEV Reasoning Navigator: Cognitive supervision, loop prevention, and anti-hallucination engine for autonomous LLM agents using TypeSafe AI<br>
-  <sub>`Project` · andreuvm · `Py` · [call site](https://github.com/AndreuVM/jev-reasoning-navigator/blob/HEAD/jev_navigator/core/typesafe_client.py), read 2026-09-24</sub>
+  <sub>`Project` · andreuvm · `Py` · [call site](https://github.com/AndreuVM/praxeon/blob/HEAD/jev_navigator/core/typesafe_client.py), read 2026-09-24</sub>
 
   **Caveats:** `no licence`
 
@@ -553,7 +553,7 @@ _Use calibrated confidence to decide what a person must see._
   Seven distinct email decisions, each with its own separately chosen threshold, falling back to the normal LLM on any error.<br>
   <sub>`Project` · ★10k+ · `TS` · `choice` · `noul` · [call site](https://github.com/elie222/inbox-zero/blob/HEAD/apps/web/utils/decision-model/typesafe.ts), read 2026-09-22</sub>
 
-**10 of 68** shown · [all 68 on one page →](docs/by-pattern/human-escalation.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=human-escalation&lang=en)
+**10 of 69** shown · [all 69 on one page →](docs/by-pattern/human-escalation.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=human-escalation&lang=en)
 
 <sub>[↑ Pattern index](#pattern-index)</sub>
 
@@ -590,6 +590,8 @@ _Pick which downstream model or tier should handle a request._
 - **[jev-codex-router](https://github.com/0xNatoshi/jev-codex-router)**<br>
   Judges how hard a coding turn is, then picks the model tier, reasoning depth and speed mode to match.<br>
   <sub>`Plugin` · ★100+ · `JS` · `choice` · `score` · [call site](https://github.com/0xNatoshi/jev-codex-router/blob/HEAD/server/jev_server.py), read 2026-09-22</sub>
+
+  **Caveats:** `archived`
 
 - **[jev-eval-agent](https://github.com/vinilana/jev-eval-agent)**<br>
   An agent that routes evaluation work through typed decisions.<br>
@@ -645,7 +647,7 @@ _Pack many questions — including speculative ones — into one request and let
 
 - **[jev-chat: a tool-calling chatbot with no LLM](https://github.com/w3cj/jev-chat)**<br>
   A chat bot that does tool calling with no language model anywhere: one request asks the request kind, the tool, and every tool's arguments at once.<br>
-  <sub>`Project` · ★10+ · `TS` · `choice` · `noul` · [call site](https://github.com/w3cj/jev-chat/blob/HEAD/apps/server/src/jev/client.ts), read 2026-09-22</sub>
+  <sub>`Project` · ★100+ · `TS` · `choice` · `noul` · [call site](https://github.com/w3cj/jev-chat/blob/HEAD/apps/server/src/jev/client.ts), read 2026-09-22</sub>
 
 - **[jev-forge](https://github.com/zwliJay/jev-forge)**<br>
   An open training and inference stack for Jev-style decision models. Train models to score dynamic candidate branches from a shared prefix, with support for high-cardinality choice, calibration, and fast batched inference. <sub>(upstream description)</sub><br>
@@ -757,7 +759,7 @@ _Pull typed fields out of messy text by choosing among candidates rather than ge
 
   **Caveats:** `no licence`
 
-**10 of 16** shown · [all 16 on one page →](docs/by-pattern/data-extraction.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=data-extraction&lang=en)
+**10 of 17** shown · [all 17 on one page →](docs/by-pattern/data-extraction.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=data-extraction&lang=en)
 
 <sub>[↑ Pattern index](#pattern-index)</sub>
 
@@ -807,7 +809,7 @@ _Put an item into a taxonomy, including deep hierarchies walked with probabiliti
   A very fast document classifier/splitter using Jev <sub>(upstream description)</sub><br>
   <sub>`Project` · ★100+ · jerryjliu · `Py` · [call site](https://github.com/jerryjliu/docjev/blob/HEAD/src/jev_docs/engines/jev.py), read 2026-09-22</sub>
 
-**10 of 119** shown · [all 119 on one page →](docs/by-pattern/classification.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=classification&lang=en)
+**10 of 120** shown · [all 120 on one page →](docs/by-pattern/classification.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=classification&lang=en)
 
 <sub>[↑ Pattern index](#pattern-index)</sub>
 
@@ -829,13 +831,13 @@ _Turn free text into numeric features for a classical downstream model._
   Builds calibrated decision functions from human feedback.<br>
   <sub>`Project` · ★100+ · sutro-sh · `Py` · [call site](https://github.com/sutro-sh/jev-align/blob/HEAD/src/jev_align/jev.py), read 2026-09-22</sub>
 
+- **[Prism](https://github.com/irfndi/prism-liquidity-agent)**<br>
+  Does not place orders. It judges market conditions such as toxic flow and mean reversion, and hands the assessment to the existing strategy.<br>
+  <sub>`Project` · ★100+ · `TS` · `choice` · `score` · [call site](https://github.com/irfndi/prism-liquidity-agent/blob/HEAD/engine/jev-service.ts), read 2026-09-22</sub>
+
 - **[jev-curate](https://github.com/AkashPriyadarshii/jev-curate)**<br>
   Curates training data: JSONL and Parquet rows are judged on quality, relevance and risk before deciding what reaches downstream training.<br>
   <sub>`Project` · ★10+ · `Rs` · `score` · `noul` · [call site](https://github.com/AkashPriyadarshii/jev-curate/blob/HEAD/src/client.rs), read 2026-09-22</sub>
-
-- **[Prism](https://github.com/irfndi/prism-liquidity-agent)**<br>
-  Does not place orders. It judges market conditions such as toxic flow and mean reversion, and hands the assessment to the existing strategy.<br>
-  <sub>`Project` · ★10+ · `TS` · `choice` · `score` · [call site](https://github.com/irfndi/prism-liquidity-agent/blob/HEAD/engine/jev-service.ts), read 2026-09-22</sub>
 
 - **[jev-board-lab](https://github.com/WebGrga/jev-board-lab)**<br>
   Interactive explorer and Jev question workspace for Jev Board datasets. <sub>(upstream description)</sub><br>
@@ -863,6 +865,10 @@ _Classify and route incoming documents, invoices and forms._
   A very fast document classifier/splitter using Jev <sub>(upstream description)</sub><br>
   <sub>`Project` · ★100+ · jerryjliu · `Py` · [call site](https://github.com/jerryjliu/docjev/blob/HEAD/src/jev_docs/engines/jev.py), read 2026-09-22</sub>
 
+- **[formanator](https://github.com/timrogers/formanator)**<br>
+  Submit Forma <https://joinforma.com> benefit claims from the command line and Model Context Protocol (MCP) clients, with support for AI-powered receipt analysis with an LLM or Jev <sub>(upstream description)</sub><br>
+  <sub>`Plugin` · ★100+ · timrogers · `Rs` · [call site](https://github.com/timrogers/formanator/blob/HEAD/src/typesafe.rs), read 2026-09-22</sub>
+
 - **[tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier)**<br>
   Tax document page classifier built on Jev decisions. 100% strict accuracy across 261 IRS forms, ~$0.001 per page. <sub>(upstream description)</sub><br>
   <sub>`Project` · ★100+ · kyotofin · `TS` · [call site](https://github.com/kyotofin/tax-doc-classifier/blob/HEAD/src/backend.ts), read 2026-09-22</sub>
@@ -871,13 +877,17 @@ _Classify and route incoming documents, invoices and forms._
   A Document OCR Router to help route pages based on content. <sub>(upstream description)</sub><br>
   <sub>`Project` · ★10+ · misbahsy · `Rs` · [call site](https://github.com/misbahsy/doc-router/blob/HEAD/crates/doc-router-jev/src/wire.rs), read 2026-09-22</sub>
 
-- **[formanator](https://github.com/timrogers/formanator)**<br>
-  Submit Forma <https://joinforma.com> benefit claims from the command line and Model Context Protocol (MCP) clients, with support for AI-powered receipt analysis with an LLM or Jev <sub>(upstream description)</sub><br>
-  <sub>`Plugin` · ★10+ · timrogers · `Rs` · [call site](https://github.com/timrogers/formanator/blob/HEAD/src/typesafe.rs), read 2026-09-22</sub>
-
 - **[jev-capability-atlas](https://github.com/Zaious/jev-capability-atlas)**<br>
   Independent, evidence-based map of when TypeSafe's Jev actually holds up vs. breaks down — real API-call receipts, not a leaderboard. 中文為主的雙語 repo。 <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ★10+ · zaious · `Py` · [call site](https://github.com/Zaious/jev-capability-atlas/blob/HEAD/scripts/common/jev_client.py), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
+
+- **[jevmory](https://github.com/romiluz13/jevmory)**<br>
+  Coding-agent memory where every fact is a verbatim quote graded by TypeSafe Jev's calibrated confidence. Local-first, SQLite receipts, zero dependencies. <sub>(upstream description)</sub><br>
+  <sub>`Project` · ★10+ · romiluz13 · `Py` · [call site](https://github.com/romiluz13/jevmory/blob/HEAD/jevmory/cli.py), read 2026-09-22</sub>
+
+- **[pdf-race](https://github.com/goodrahstar/pdf-race)**<br>
+  Docling → Jev vs Docling → Gemini 3.8 Flash vs Gemini reading the PDF: same documents, one clock, scored against arXiv's own metadata <sub>(upstream description)</sub><br>
+  <sub>`Benchmark` · ★10+ · goodrahstar · `JS` · [call site](https://github.com/goodrahstar/pdf-race/blob/HEAD/lib/lanes.mjs), read 2026-09-24</sub>
 
 - **[decision-first](https://github.com/harrymunro/decision-first)**<br>
   Agent skill that spots bounded-judgment steps, tries a typed decision model (TypeSafe's Jev) first, and documents every attempt <sub>(upstream description)</sub><br>
@@ -892,14 +902,6 @@ _Classify and route incoming documents, invoices and forms._
 - **[jev-builder](https://github.com/collapseindex/jev-builder)**<br>
   A browser form for building requests to TypeSafe's Jev: pick a template, fill in the blanks, copy the request. No JSON, no install, runs locally. <sub>(upstream description)</sub><br>
   <sub>`Project` · collapseindex · `JS` · [call site](https://github.com/collapseindex/jev-builder/blob/HEAD/jev-builder-core.js), read 2026-09-22</sub>
-
-- **[jev-decision-lab](https://github.com/jlov7/jev-decision-lab)**<br>
-  A local lab for seeing what TypeSafe's Jev judgment model does on realistic business cases: typed answers, probabilities, policy in code, receipts. <sub>(upstream description)</sub><br>
-  <sub>`Project` · jlov7 · `Py` · [call site](https://github.com/jlov7/jev-decision-lab/blob/HEAD/jev_lab/adapters.py), read 2026-09-22</sub>
-
-- **[jev-document-classification](https://github.com/Charlyhno-eng/jev-document-classification)**<br>
-  JEV Document Classification enables the rapid and cost-effective classification of text-based documents using AI, leveraging TypeSafe's "System One" model. <sub>(upstream description)</sub><br>
-  <sub>`Project` · charlyhno-eng · `TS` · [call site](https://github.com/Charlyhno-eng/jev-document-classification/blob/HEAD/server/classification-cache.ts), read 2026-09-22</sub>
 
 **10 of 20** shown · [all 20 on one page →](docs/by-pattern/document-triage.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=document-triage&lang=en)
 
@@ -983,6 +985,10 @@ _Score quality, risk or relevance on an ordered scale._
   An Android reply co-pilot that judges intent, timing and risk from on-screen text, while separate models handle OCR and drafting.<br>
   <sub>`Project` · ★1k+ · `Java` · `choice` · `score` · `noul` · [call site](https://github.com/jev-chat/jev-chat-jarvis/blob/HEAD/app/src/main/java/com/jev/probe/jev/JevQuestions.kt), read 2026-09-22</sub>
 
+- **[jev-lint](https://github.com/mizchi/jev-lint)**<br>
+  lint text in code by jev scorerer <sub>(upstream description)</sub><br>
+  <sub>`Project` · ★100+ · mizchi · `TS` · [call site](https://github.com/mizchi/jev-lint/blob/HEAD/src/jev.ts), read 2026-09-22</sub>
+
 - **[jev-review](https://github.com/NiazMorshed2007/jev-review)**<br>
   A local-first MCP plugin for continuous code-quality review by coding agents.<br>
   <sub>`Plugin` · ★100+ · niazmorshed2007 · `TS` · [call site](https://github.com/NiazMorshed2007/jev-review/blob/HEAD/src/jev/client.ts), read 2026-09-22</sub>
@@ -991,11 +997,7 @@ _Score quality, risk or relevance on an ordered scale._
   Pre-screens code review with Jev to surface high-risk changes for a more expensive model or a person, with a local dashboard.<br>
   <sub>`Project` · ★100+ · `TS` · `choice` · `score` · `noul` · [call site](https://github.com/devagrawal09/jev-review/blob/HEAD/src/review/codebase-judgments.ts), read 2026-09-22</sub>
 
-- **[jev-semgrep](https://github.com/uehaj/jev-semgrep)**<br>
-  grep by meaning, across languages. TypeSafe Jev scores every line against a meaning; combine meanings with AND/OR/NOT. 意味で探す grep。日本語で英語を、英語で日本語を検索できる <sub>(upstream description)</sub><br>
-  <sub>`Project` · ★100+ · uehaj · `JS` · [call site](https://github.com/uehaj/jev-semgrep/blob/HEAD/semgrep.mjs), read 2026-09-22</sub>
-
-**10 of 164** shown · [all 164 on one page →](docs/by-pattern/content-scoring.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=en)
+**10 of 165** shown · [all 165 on one page →](docs/by-pattern/content-scoring.md) · [filter on the site](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=en)
 
 <sub>[↑ Pattern index](#pattern-index)</sub>
 
@@ -1075,10 +1077,10 @@ The same rows grouped by what you will find when you open the link.
 | **SDK** | **94** | Client libraries, official and community. |
 | **Integration** | **34** | A gateway, framework or platform route to the model. |
 | **Snippet** | **4** | Small runnable examples in this repository. |
-| **Project** | **653** | An application or library that calls Jev in anger. |
+| **Project** | **654** | An application or library that calls Jev in anger. |
 | **Plugin** | **238** | Editor, agent and MCP integrations you can install. |
 | **Tutorial** | **9** | Step-by-step material with code. |
-| **Benchmark** | **70** | Measurement. Check whether it is independent or vendor-reported. |
+| **Benchmark** | **71** | Measurement. Check whether it is independent or vendor-reported. |
 | **Article** | **12** | Explainers, analysis and launch coverage. |
 | **Video** | **3** | Walkthroughs and reviews. |
 | **Discussion** | **2** | Threads worth reading, including the sceptical ones. |
@@ -1091,7 +1093,7 @@ The parts that are not the catalog.
 <details>
 <summary><b>Preview the searchable catalogue</b></summary>
 
-<a href="https://kydlikebtc.github.io/awesome-jev/?lang=en"><img src="https://kydlikebtc.github.io/awesome-jev/img/site-en.png?v=5347ca5f6fb376f0" alt="Searchable Jev catalogue with curated paths, filters, dated source evidence and entry cards" width="760"></a>
+<a href="https://kydlikebtc.github.io/awesome-jev/?lang=en"><img src="https://kydlikebtc.github.io/awesome-jev/img/site-en.png?v=e8a90b18d599526c" alt="Searchable Jev catalogue with curated paths, filters, dated source evidence and entry cards" width="760"></a>
 
 <sub>Filter by clicking a bar. Two more views: <a href="https://kydlikebtc.github.io/awesome-jev/?view=prims">primitives</a> · <a href="https://kydlikebtc.github.io/awesome-jev/?view=compat">compatibility</a>. Every filter and entry is a shareable URL.</sub>
 
@@ -1118,17 +1120,17 @@ The parts that are not the catalog.
 
 ## What is verified, and what is not
 
-- **Link checks** — 1205 rows carry an HTTP 2xx response and a `checked` date; 3 carry no dated success record. Dates vary by row and a past success does not guarantee availability today. Stars and licences are repository metadata snapshots.
+- **Link checks** — 1207 rows carry an HTTP 2xx response and a `checked` date; 3 carry no dated success record. Dates vary by row and a past success does not guarantee availability today. Stars and licences are repository metadata snapshots.
 
 - **Source and code review** — `evidence.path` cites the file read, `evidence.read_on` records the reported review date, and `evidence_none` explains missing file evidence. Reading a call site is separate from running it. Summaries include source descriptions and machine translations; see the [method and its limits](docs/method.md).
 
-- **Whose words the summaries are** — 890 summaries are the linked project's own GitHub description, word for word, and are marked *(upstream description)*; 0 are marked *(earlier upstream description)*: taken from one that no longer reads the same. Those words are their authors'. 0 summaries are marked as written for this catalogue, and 318 carry no record either way. The weekly refresh compares each summary with its repository's description and labels a match; only a person marks a summary as written here.
+- **Whose words the summaries are** — 882 summaries are the linked project's own GitHub description, word for word, and are marked *(upstream description)*; 9 are marked *(earlier upstream description)*: taken from one that no longer reads the same. Those words are their authors'. 2 summaries are marked as written for this catalogue, and 317 carry no record either way. The weekly refresh compares each summary with its repository's description and labels a match; only a person marks a summary as written here.
 
-- **Who wrote the Chinese** — 196 of 1208 rows have a Chinese summary a person wrote; a model translated the other 1012, and each of those carries `zh_machine` and is marked *(机翻)* in the Chinese README, on the Chinese pattern pages and in the site's Chinese view. The [translation queue](docs/zh-queue.md) lists machine translations for a person to replace: every one on the most-starred rows, then, most-starred first, others flagged by at least one of three text signals a script computes (much shorter than the English, a number from the English missing, mostly ASCII). A signal is a comparison, not a verdict on a translation, and no row in the READMEs, the pattern pages or the site shows one. To take some, see [Claim a translation](CONTRIBUTING.md#claim-a-translation); only a translation of your own takes `zh_machine` off.
+- **Who wrote the Chinese** — 195 of 1210 rows have a Chinese summary a person wrote; a model translated the other 1015, and each of those carries `zh_machine` and is marked *(机翻)* in the Chinese README, on the Chinese pattern pages and in the site's Chinese view. The [translation queue](docs/zh-queue.md) lists machine translations for a person to replace: every one on the most-starred rows, then, most-starred first, others flagged by at least one of three text signals a script computes (much shorter than the English, a number from the English missing, mostly ASCII). A signal is a comparison, not a verdict on a translation, and no row in the READMEs, the pattern pages or the site shows one. To take some, see [Claim a translation](CONTRIBUTING.md#claim-a-translation); only a translation of your own takes `zh_machine` off.
 
-- **Call-site text checks** — 1074 rows record in `evidence` a file where the project calls Jev, and strings matched in it. Another 56 record a file that shows a project speaking Jev's request shape rather than building on Jev (every `alternative`, whether it serves that shape or sends Jev the same request to compare, and adapters backed by other models), and 0 only an example the project ships; `evidence.kind` says which. The weekly [claims job](https://github.com/kydlikebtc/awesome-jev/actions/workflows/claims.yml) checks that those strings remain on the default branch and reports missing text or files. These counts measure recorded evidence, **not latest CI passes**. A text match does not prove that a call executes, the API is compatible, or the result is correct. Citations a script marks for a person to re-read are listed in the [review queue](docs/review-queue.md).
+- **Call-site text checks** — 1076 rows record in `evidence` a file where the project calls Jev, and strings matched in it. Another 56 record a file that shows a project speaking Jev's request shape rather than building on Jev (every `alternative`, whether it serves that shape or sends Jev the same request to compare, and adapters backed by other models), and 0 only an example the project ships; `evidence.kind` says which. The weekly [claims job](https://github.com/kydlikebtc/awesome-jev/actions/workflows/claims.yml) checks that those strings remain on the default branch and reports missing text or files. These counts measure recorded evidence, **not latest CI passes**. A text match does not prove that a call executes, the API is compatible, or the result is correct. Citations a script marks for a person to re-read are listed in the [review queue](docs/review-queue.md).
 
-- **Which primitives** — 101 rows name in `question_types` the primitives a person read the code calling. Apart from those, 686 rows carry `primitives_seen`, a machine text signal: the weekly refresh found a primitive's request or answer shape (`"type": "choice"`, `Noul(`, `.noul`) in the one file the row cites. A shape in a file is not a call, and 637 of those rows carry no `question_types`, so the signal is all that is recorded about their primitives. No filter, count or rule here reads the signal as a primitive claim.
+- **Which primitives** — 104 rows name in `question_types` the primitives a person read the code calling. Apart from those, 684 rows carry `primitives_seen`, a machine text signal: the weekly refresh found a primitive's request or answer shape (`"type": "choice"`, `Noul(`, `.noul`) in the one file the row cites. A shape in a file is not a call, and 632 of those rows carry no `question_types`, so the signal is all that is recorded about their primitives. No filter, count or rule here reads the signal as a primitive claim.
 
 - **Runtime and performance not independently tested here** — treat every catalogue entry as untested by this repository, including entries without `code-untested`. Linked benchmarks describe their authors' measurements; this catalogue has not reproduced them. Repository build checks and package smoke tests do not exercise those integrations or the live Jev API, and inclusion is not a security review.
 
@@ -1168,7 +1170,7 @@ One entry per example, validated against a JSON Schema on every push.
 
 | File | What it is |
 | --- | --- |
-| [`catalog.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/catalog.json) | 1208 entries |
+| [`catalog.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/catalog.json) | 1210 entries |
 | [`retired.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/retired.json) | 2 retired |
 | [`compat.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/compat.json) | The platform matrix behind `docs/compatibility.md` |
 | [`patterns.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/patterns.json) | The decision taxonomy both generators and the MCP server read |
