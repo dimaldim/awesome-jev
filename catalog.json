@@ -52472,6 +52472,78 @@
     "link_status": 200
   },
   {
+    "slug": "jevbench-human-disagreement",
+    "title": "jevbench",
+    "summary": "Preregistered, bias-corrected test of TypeSafe Jev's calibration under human disagreement (ChaosNLI, 100 labels per item)",
+    "summary_source": "upstream-description",
+    "summary_zh": "对 TypeSafe Jev 在人类意见分歧下的校准进行预注册、经偏差校正的测试（ChaosNLI，每条 100 个人工标注）",
+    "zh_machine": true,
+    "url": "https://github.com/GautamTalksDev/jevbench",
+    "kind": "benchmark",
+    "patterns": [
+      "classification",
+      "human-escalation"
+    ],
+    "question_types": [
+      "choice",
+      "noul"
+    ],
+    "languages": [
+      "python"
+    ],
+    "platforms": [
+      "typesafe-api"
+    ],
+    "author": {
+      "name": "Gautam Khosla",
+      "handle": "GautamTalksDev",
+      "url": "https://github.com/GautamTalksDev"
+    },
+    "has_code": true,
+    "evidence": {
+      "path": "jevbench/clients/jev.py",
+      "matched": [
+        "from typesafe_sdk import TypeSafeClient",
+        "https://api.typesafe.ai",
+        "system_one("
+      ],
+      "kind": "call-site"
+    },
+    "measurement": {
+      "task": "Whether Jev's stated confidence drops on natural language inference items where human annotators disagree",
+      "report": "https://doi.org/10.5281/zenodo.22971491",
+      "datasets": [
+        "ChaosNLI"
+      ],
+      "comparators": [
+        "BART-MNLI"
+      ],
+      "metrics": [
+        "calibration",
+        "ranking"
+      ],
+      "n": 1500,
+      "model_string": "jev-1.13.0",
+      "as_of": "2026-09-26",
+      "raw_data": false,
+      "preregistered": true,
+      "direction": "mixed"
+    },
+    "first_seen": "2026-09-29",
+    "flags": [
+      "ai-generated",
+      "self-submitted"
+    ],
+    "notes": "Submitted by its own author, who discloses that this entry was written with Claude Code and that the repository was built with AI coding assistance; the flags record that disclosure. Choice is close to calibrated on 750 low-disagreement items but overconfident on 750 high-disagreement ones (confidence 0.807 vs 0.468 agreement; bias-corrected ECE gap 0.264 vs a preregistered 0.09); Noul (0.076) is inconclusive. Aggregates are committed, per-call responses are not.",
+    "sources": [
+      {
+        "catalog": "author submission",
+        "url": "https://github.com/kydlikebtc/awesome-jev/pull/29"
+      }
+    ],
+    "license": "CC0-1.0"
+  },
+  {
     "slug": "jevbridge",
     "title": "Jevbridge",
     "summary": "ACP and MCP adapter that bridges TypeSafe Jev with any LLM — computer use and typed decisions alongside Codex, Claude, Grok, and OpenCode.",
