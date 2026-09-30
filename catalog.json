@@ -46247,6 +46247,57 @@
     "link_status": 200
   },
   {
+    "slug": "jev-span",
+    "title": "JevSpan",
+    "summary": "Zero-shot named entity recognition for Chinese and English: code enumerates candidate spans at punctuation, and Jev choice questions nominate a window per entity type, verify each nominee (type, none, mixed or partial) and pick its exact boundary, keeping each entity's probability.",
+    "summary_source": "curated",
+    "summary_zh": "中英文零样本命名实体识别：代码按标点列出带精确字符位置的候选片段，由 Jev 的 choice 问题为每种实体类型提名窗口、核验每个候选（该类型、none、mixed 或 partial）并选出准确边界，每个实体都保留概率和决策过程。",
+    "zh_machine": true,
+    "url": "https://github.com/lzq-0529/jev-span",
+    "kind": "project",
+    "patterns": [
+      "data-extraction"
+    ],
+    "platforms": [
+      "typesafe-api"
+    ],
+    "question_types": [
+      "choice"
+    ],
+    "languages": [
+      "python"
+    ],
+    "author": {
+      "name": "lzq-0529",
+      "url": "https://github.com/lzq-0529"
+    },
+    "has_code": true,
+    "stars": 4,
+    "repo_license": "MIT",
+    "evidence": {
+      "path": "src/jevspan/jev_client.py",
+      "matched": [
+        "api.typesafe.ai",
+        "/v1/systemone",
+        "\"type\": \"choice\""
+      ],
+      "read_on": "2026-09-30"
+    },
+    "flags": [
+      "ai-generated",
+      "self-submitted"
+    ],
+    "notes": "Submitted by the project's author. Most of the project's code, and this row's English and Chinese text, were written with an AI coding agent under the author's direction.",
+    "first_seen": "2026-09-30",
+    "sources": [
+      {
+        "catalog": "author submission",
+        "url": "https://github.com/kydlikebtc/awesome-jev/pull/31"
+      }
+    ],
+    "license": "CC0-1.0"
+  },
+  {
     "slug": "jev-spec",
     "title": "jev-spec",
     "summary": "⚡ Catch spec drift on every commit: check your code against your Markdown specs with TypeSafe AI's Jev model.",
