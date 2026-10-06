@@ -72,15 +72,26 @@ class SelfSubmittedCaveatTest(unittest.TestCase):
             e["slug"] for e in cls.server.CATALOG if "self-submitted" in (e.get("flags") or [])
         )
 
-    def test_the_flag_is_a_caveat_not_a_disqualifier(self):
-        self.assertNotIn("self-submitted", self.server.DISQUALIFYING)
+    def test_self_submission_does_not_override_default_visibility(self):
+        prototype = self.server.get_example(self.flagged[0])
+        for flags, expected in (
+            (["self-submitted"], ["submitted-example"]),
+            (["self-submitted", "not-jev"], []),
+            (["self-submitted", "shadow-mode-only"], []),
+        ):
+            entry = {**prototype, "slug": "submitted-example", "flags": flags}
+            with self.subTest(flags=flags), patch.object(self.server, "CATALOG", [entry]):
+                result = self.server.search_examples()
+                self.assertEqual([row["slug"] for row in result["results"]], expected)
 
     def test_self_submitted_rows_are_returned_with_the_caveat(self):
         self.assertTrue(self.flagged, "expected at least one self-submitted row in the catalogue")
         for slug in self.flagged:
-            with self.subTest(slug=slug):
-                # Default filters, so a row dropped as "not an example" would be missing.
-                result = self.server.search_examples(query=slug, limit=50)
+            entry = self.server.get_example(slug)
+            with self.subTest(slug=slug), patch.object(self.server, "CATALOG", [entry]):
+                # Submissions may also be alternatives or shadow-mode examples.
+                # Include those explicitly and isolate the row from result limits.
+                result = self.server.search_examples(query=slug, include_non_jev=True, limit=50)
                 by_slug = {row["slug"]: row for row in result["results"]}
                 self.assertIn(slug, by_slug, "a self-submitted row was filtered out")
                 self.assertIn("self-submitted", by_slug[slug]["caveats"])

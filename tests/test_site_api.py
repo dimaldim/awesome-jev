@@ -384,15 +384,19 @@ class AssembleTest(unittest.TestCase):
         # The regenerate job's commit after a merge starts no Pages run, so the
         # deploy of the merge itself must not publish the old counts.
         llms = self.root / "llms.txt"
-        stale = llms.read_text().replace(
-            f"<!--n:entries-->{_stats.compute()['entries']}<!--/n-->", "<!--n:entries-->3<!--/n-->"
+        # Source-only PRs may already carry stale generated counts. Build the
+        # fixture from the marker, independent of the committed number.
+        stale, replaced = re.subn(
+            r"<!--n:entries-->.*?<!--/n-->", "<!--n:entries-->3<!--/n-->", llms.read_text(), flags=re.S
         )
-        self.assertNotEqual(stale, llms.read_text())
+        self.assertGreater(replaced, 0)
         llms.write_text(stale)
         code, out = self.run_main(assemble_site.main)
         self.assertEqual(code, 0, out)
         published = (self.root / "site" / "llms.txt").read_text()
         self.assertNotIn("<!--n:entries-->3<!--/n-->", published)
+        entries = len(json.loads((self.root / "catalog.json").read_text()))
+        self.assertIn(f"<!--n:entries-->{entries}<!--/n-->", published)
         self.assertEqual(published, site_api.llms_text(stale, _stats.compute()))
         code, out = self.run_main(check_site_data.main)
         self.assertEqual(code, 0, out)
