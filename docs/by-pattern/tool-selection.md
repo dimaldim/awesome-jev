@@ -69,6 +69,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[DeepChat: agent tool-permission review](https://github.com/ThinkInAIXYZ/deepchat)** — Reviews each tool call on three axes — risk level, whether the user authorised it, and an explicit prompt-injection pressure check.
   <sub>`Project` · ★1k+ · `TS` · `choice` · `noul` · call site [`src/shared/jevProtocol.ts`](https://github.com/ThinkInAIXYZ/deepchat/blob/HEAD/src/shared/jevProtocol.ts), read 2026-09-22</sub>
 
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)** — Nine agent skills plus a CLI covering model routing, memory filtering, turn retention, one-of-many skill selection and next-action choice.
+  <sub>`Plugin` · ★1k+ · `Py` · `choice` · `score` · `noul` · call site [`jevkit/client.py`](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py), read 2026-09-22 · ⚠ `measured, not adopted`</sub>
+
 - **[jev-trader](https://github.com/jarrodwatts/jev-trader)** — High-frequency market making on a test network, deciding buy or sell from spread and trade direction.
   <sub>`Project` · ★1k+ · `TS` · `choice` · call site [`src/config.ts`](https://github.com/jarrodwatts/jev-trader/blob/HEAD/src/config.ts), read 2026-09-22 · ⚠ `unverified claims`</sub>
 
@@ -89,9 +92,6 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[foreman](https://github.com/thruwire/foreman)** — A software-factory foreman that uses Jev to decide what an agent pipeline should do next.
   <sub>`Project` · ★100+ · thruwire · `Py` · call site [`src/foreman/foreman/jev.py`](https://github.com/thruwire/foreman/blob/HEAD/src/foreman/foreman/jev.py), read 2026-09-22</sub>
-
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)** — Nine agent skills plus a CLI covering model routing, memory filtering, turn retention, one-of-many skill selection and next-action choice.
-  <sub>`Plugin` · ★100+ · `Py` · `choice` · `score` · `noul` · call site [`jevkit/client.py`](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py), read 2026-09-22 · ⚠ `measured, not adopted`</sub>
 
 - **[hyperedit](https://github.com/kevinbadi/hyperedit)** — An AI video editor routing an editing instruction to an operation, a target clip and a track, with a keyword router as fallback.
   <sub>`Project` · ★100+ · `TS` · `choice` · `noul` · call site [`scripts/jev.js`](https://github.com/kevinbadi/hyperedit/blob/HEAD/scripts/jev.js), read 2026-09-22 · ⚠ `no licence`</sub>
@@ -205,7 +205,7 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
   <sub>`Project` · ★10+ · doeixd · `TS` · call site [`examples/headline.ts`](https://github.com/doeixd/discern/blob/HEAD/examples/headline.ts), read 2026-09-22</sub>
 
 - **[dsh-jev](https://github.com/buberlo/dsh-jev)** — Jev-powered decision layer for DeepSeek Harness <sub>(upstream description)</sub>
-  <sub>`Plugin` · ★10+ · buberlo · `TS` · call site [`packages/dsh-jev/src/config.ts`](https://github.com/buberlo/dsh-jev/blob/HEAD/packages/dsh-jev/src/config.ts), read 2026-09-24</sub>
+  <sub>`Plugin` · ★10+ · buberlo · `TS` · call site [`packages/dsh-jev/src/config.ts`](https://github.com/buberlo/dsh-jev/blob/HEAD/packages/dsh-jev/src/config.ts), read 2026-09-24 · ⚠ `archived`</sub>
 
 - **[ego-jev](https://github.com/ZephyrDeng/ego-jev)** — Jev (TypeSafe System One) inner loop for ego-browser — one ~0.4s typed decision per DOM step instead of an LLM turn. Agent skill for ego lite.
   <sub>`Plugin` · ★10+ · zephyrdeng · `JS` · call site [`skills/ego-jev/scripts/jev-loop.mjs`](https://github.com/ZephyrDeng/ego-jev/blob/HEAD/skills/ego-jev/scripts/jev-loop.mjs), read 2026-09-24</sub>
@@ -233,6 +233,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[jev-autopilot](https://github.com/arielweinberger/jev-autopilot)** — This demo uses Jev from TypeSafe AI to autonomously fly a drone in a random city from point A to point B, avoiding obstacles along the way. A trip costs $0.01. <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · arielweinberger · `TS` · call site [`server/pilot.ts`](https://github.com/arielweinberger/jev-autopilot/blob/HEAD/server/pilot.ts), read 2026-09-22 · ⚠ `no licence`</sub>
+
+- **[jev-bot](https://github.com/bl888m/jev-bot)** — JEV-powered market decision bot for stocks, crypto and memes. State in, BUY/SELL/HOLD/AVOID out, paper by default <sub>(upstream description)</sub>
+  <sub>`Project` · ★10+ · bl888m · `Py` · call site [`jev_bot/jev.py`](https://github.com/bl888m/jev-bot/blob/HEAD/jev_bot/jev.py), read 2026-09-24</sub>
 
 - **[jev-browser](https://github.com/tontoko/jev-browser)** — One grounded Jev/Playwright core: typed SDK, persistent CLI, and MCP server with native browser operations and deterministic assertions. <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · tontoko · `JS` · call site [`src/decision.ts`](https://github.com/tontoko/jev-browser/blob/HEAD/src/decision.ts), read 2026-09-24</sub>
@@ -275,9 +278,6 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[jev-mail-classifier](https://github.com/parth-kp/jev-mail-classifier)** — Classify your inbox with Jev (TypeSafe's System One model) — tag, move, flag, and notify, all config-driven. <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · parth-kp · `Py` · call site [`jev_mail/providers/typesafe_direct.py`](https://github.com/parth-kp/jev-mail-classifier/blob/HEAD/jev_mail/providers/typesafe_direct.py), read 2026-09-22</sub>
-
-- **[jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red)** — Pokemon Red on PyBoy: code owns the route and the arithmetic, Jev picks at branches in about 100 ms, calibration measured instead of assumed <sub>(upstream description)</sub>
-  <sub>`Project` · ★10+ · valentynkit · `Py` · call site [`src/jpp/policy.py`](https://github.com/valentynkit/jev-plays-pokemon-red/blob/HEAD/src/jpp/policy.py), read 2026-09-24</sub>
 
 - **[jev-reflex-autonomy-lab](https://github.com/khordoo/jev-reflex-autonomy-lab)** — Multi-drone autonomy lab demonstrating TypeSafe Jev reflex decisions with optional System 2 strategy guidance.
   <sub>`Project` · ★10+ · khordoo · `TS` · call site [`lib/reflex/jev-server.ts`](https://github.com/khordoo/jev-reflex-autonomy-lab/blob/HEAD/lib/reflex/jev-server.ts), read 2026-09-22</sub>
@@ -447,9 +447,6 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study)** — Independent Jev 1.13.0 behavior study: report, controlled prompt experiments, raw results, and offline verification. <sub>(upstream description)</sub>
   <sub>`Project` · rinnecoder · `Py` · call site [`behavior_study.py`](https://github.com/RINNECODER/jev-behavior-study/blob/HEAD/behavior_study.py), read 2026-09-22</sub>
 
-- **[jev-bot](https://github.com/bl888m/jev-bot)** — JEV-powered market decision bot for stocks, crypto and memes. State in, BUY/SELL/HOLD/AVOID out, paper by default <sub>(upstream description)</sub>
-  <sub>`Project` · bl888m · `Py` · call site [`jev_bot/jev.py`](https://github.com/bl888m/jev-bot/blob/HEAD/jev_bot/jev.py), read 2026-09-24</sub>
-
 - **[jev-browse](https://github.com/0x7067/jev-browse)** — Browser automation with Jev (TypeSafe) as decision model <sub>(upstream description)</sub>
   <sub>`Project` · 0x7067 · `JS` · call site [`bundled/cli.mjs`](https://github.com/0x7067/jev-browse/blob/HEAD/bundled/cli.mjs), read 2026-09-24</sub>
 
@@ -554,6 +551,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[jev-plays](https://github.com/mansicer/jev-plays)** — A System One model plays Craftax while an LLM sets the goals: five agents on the same map, from Jev on raw actions to an LLM controlling every step, compared in logged episodes.
   <sub>`Benchmark` · mansicer · `Py` · call site [`craftax_agent/jev_policy.py`](https://github.com/mansicer/jev-plays/blob/HEAD/craftax_agent/jev_policy.py), read 2026-09-24</sub>
+
+- **[jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red)** — Pokemon Red on PyBoy: code owns the route and the arithmetic, Jev picks at branches in about 100 ms, calibration measured instead of assumed <sub>(upstream description)</sub>
+  <sub>`Project` · valentynkit · `Py` · call site [`src/jpp/policy.py`](https://github.com/valentynkit/jev-plays-pokemon-red/blob/HEAD/src/jpp/policy.py), read 2026-09-24</sub>
 
 - **[jev-pong](https://github.com/ably-labs/jev-pong)** — Pong where the ball moves one step per model decision. Jev vs LLMs via Vercel AI Gateway, every player and agent on an Ably channel. <sub>(upstream description)</sub>
   <sub>`Project` · ably-labs · `TS` · call site [`lib/compare/compare-models.ts`](https://github.com/ably-labs/jev-pong/blob/HEAD/lib/compare/compare-models.ts), read 2026-09-24</sub>

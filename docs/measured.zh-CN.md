@@ -30,23 +30,23 @@
 
   > 接进去了但故意不生效：按他们自己的说法，Jev 返回的任何东西都不会进入标签、缓存行或告警。带黄金测试集。想在不拿生产环境下注的前提下试新模型，这是值得照抄的做法。
 
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
+  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
+  <sub>`插件` · ★1k+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
+
+  **注意:** `实测后未采用`
+
+  > 值得一提的是它公开了一个被放弃的用法：用 Jev 做交接摘要的召回率，反而不如原始对话记录。
+
 - **[no-mistakes: Jev review pre-brief, measured and retired](https://github.com/kunchenguid/no-mistakes/pull/1165)**<br>
   为代码审查预选上下文：每个候选文件问一个 Score —— 测了两次后被移除：计费输入明显增加、耗时几乎没有收益；离线回放还表明，候选列表根本够不到审查发现实际所在的位置。<br>
   <sub>`基准测试` · ★1k+ · `Go` · `score` · 作者结论：不利（作者自述，未经本仓库复现）</sub>
 
   > 已在 PR #1165（2026-09-22）中移除。他们的离线测量发现：候选生成器从构造上就排除了被改动的文件，而几乎所有审查发现都落在被改动的文件上；按文件附带摘录反而让列表更不精确、token 成本更高。代码已不在默认分支上，所以这一行引用的是移除它的那次改动。
 
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
-  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
-  <sub>`插件` · ★100+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
-
-  **注意:** `实测后未采用`
-
-  > 值得一提的是它公开了一个被放弃的用法：用 Jev 做交接摘要的召回率，反而不如原始对话记录。
-
 - **[jev-skill-router](https://github.com/shimo4228/jev-skill-router)**<br>
-  Claude Code 插件：询问 Jev 哪个已安装技能适配当前提示，并记录答案（先影子运行）。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
-  <sub>`插件` · shimo4228 · `Py` · [调用点](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py)，2026-09-22 阅读</sub>
+  Claude Code 插件：询问 Jev 哪个已安装技能适配当前提示，并记录答案（先影子运行）。 <sub>(项目旧自述)</sub> <sub>(机翻)</sub><br>
+  <sub>`插件` · ★10+ · shimo4228 · `Py` · [调用点](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py)，2026-09-22 阅读</sub>
 
   **注意:** `实测后未采用`
 
@@ -100,9 +100,9 @@
   只读的交易日志与复盘 harness：Jev 类型化判断、智能体集成，以及一个可复现的金融基准。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`基准测试` · ★10+ · myc0576 · `Py` · [调用点](https://github.com/myc0576/SmartMoney-Cub/blob/HEAD/src/smartmoney_cub_harness/jev/direct.py)，2026-09-22 阅读 · 作者结论：好坏参半（作者自述，未经本仓库复现）</sub>
 
-- **[typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark)**<br>
+- **[typesafe-ai-benchmark](https://github.com/iammrduncan/inference-benchmarks)**<br>
   一个模仿其结构化输出形状的网关，用于与之对比测试。<br>
-  <sub>`基准测试` · ★10+ · iammrduncan · `TS` · [调用点](https://github.com/iammrduncan/typesafe-ai-benchmark/blob/HEAD/packages/demos/lib/jev.ts)，2026-09-22 阅读 · 作者结论：好坏参半（作者自述，未经本仓库复现）</sub>
+  <sub>`基准测试` · ★10+ · iammrduncan · `TS` · [调用点](https://github.com/iammrduncan/inference-benchmarks/blob/HEAD/packages/demos/lib/jev.ts)，2026-09-22 阅读 · 作者结论：好坏参半（作者自述，未经本仓库复现）</sub>
 
 - **[windtunnel](https://github.com/nekuda-ai/WindTunnel)**<br>
   一个 WebMCP 基准，衡量 WebMCP 与其他浏览器智能体接口的差距。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
@@ -117,8 +117,6 @@
 - **[antigravity-mcp-semantic-search-with-typesafeai](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi)**<br>
   给 AI 编程助手的快速语义代码搜索与 diff 合理性审查。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`基准测试` · greenyamao · `Py` · [调用点](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi/blob/HEAD/mcp_server.py)，2026-09-22 阅读</sub>
-
-  **注意:** `无许可证`
 
 - **[can-jev-bayes](https://github.com/TomRichner/can-jev-bayes)**<br>
   Jev 会贝叶斯吗？把 TypeSafe AI 的 Jev 与贝叶斯最优策略对比，并测试它能否有效使用贝叶斯推理。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>

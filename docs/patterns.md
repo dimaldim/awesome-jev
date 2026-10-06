@@ -98,7 +98,7 @@ parallel against one ingest of the state.
 agree with themselves. Fix the taxonomy first.
 
 <!-- catalogued-intent-routing:start -->
-**Intent routing** in the catalogue: 35 rows, [each listed with its caveats](by-pattern/intent-routing.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=intent-routing&lang=en).
+**Intent routing** in the catalogue: 36 rows, [each listed with its caveats](by-pattern/intent-routing.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=intent-routing&lang=en).
 <!-- catalogued-intent-routing:end -->
 
 ---
@@ -120,7 +120,7 @@ dropping something that turns out to matter — so do not pay for it until conte
 pressure is real.
 
 <!-- catalogued-context-compaction:start -->
-**Context compaction** in the catalogue: 34 rows, [each listed with its caveats](by-pattern/context-compaction.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=context-compaction&lang=en).
+**Context compaction** in the catalogue: 35 rows, [each listed with its caveats](by-pattern/context-compaction.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=context-compaction&lang=en).
 <!-- catalogued-context-compaction:end -->
 
 ---
@@ -141,7 +141,7 @@ for the other 1%. The vendor's jaggedness doc names adversarial content as a
 known weak spot.
 
 <!-- catalogued-safety-gating:start -->
-**Safety gating** in the catalogue: 139 rows, [each listed with its caveats](by-pattern/safety-gating.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=safety-gating&lang=en).
+**Safety gating** in the catalogue: 140 rows, [each listed with its caveats](by-pattern/safety-gating.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=safety-gating&lang=en).
 <!-- catalogued-safety-gating:end -->
 
 ---
@@ -407,7 +407,7 @@ suggestion. Read one against the patterns above, give it the ones it shows or
 keep `overview`, and set `patterns_reviewed` to the date you read it.
 
 <!-- catalogued-overview:start -->
-**Overview** in the catalogue: 451 rows, [each listed with its caveats](by-pattern/overview.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=overview&lang=en).
+**Overview** in the catalogue: 453 rows, [each listed with its caveats](by-pattern/overview.md) · [the site's filter](https://kydlikebtc.github.io/awesome-jev/?p=overview&lang=en).
 <!-- catalogued-overview:end -->
 
 ---
