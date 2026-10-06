@@ -69,6 +69,9 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[DeepChat: agent tool-permission review](https://github.com/ThinkInAIXYZ/deepchat)** — 从三个维度审查每次工具调用：风险等级、用户是否授权、以及一个显式的提示注入压力检查。
   <sub>`开源项目` · ★1k+ · `TS` · `choice` · `noul` · 调用点 [`src/shared/jevProtocol.ts`](https://github.com/ThinkInAIXYZ/deepchat/blob/HEAD/src/shared/jevProtocol.ts)，2026-09-22 阅读</sub>
 
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)** — 九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。
+  <sub>`插件` · ★1k+ · `Py` · `choice` · `score` · `noul` · 调用点 [`jevkit/client.py`](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读 · ⚠ `实测后未采用`</sub>
+
 - **[jev-trader](https://github.com/jarrodwatts/jev-trader)** — 在 Monad 测试网上做高频做市。Jev 根据价差和成交方向判断下一步买还是卖。
   <sub>`开源项目` · ★1k+ · `TS` · `choice` · 调用点 [`src/config.ts`](https://github.com/jarrodwatts/jev-trader/blob/HEAD/src/config.ts)，2026-09-22 阅读 · ⚠ `宣称未核实`</sub>
 
@@ -89,9 +92,6 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 
 - **[foreman](https://github.com/thruwire/foreman)** — 一个「软件工厂工头」，用 Jev 决定智能体流水线下一步该做什么。
   <sub>`开源项目` · ★100+ · thruwire · `Py` · 调用点 [`src/foreman/foreman/jev.py`](https://github.com/thruwire/foreman/blob/HEAD/src/foreman/foreman/jev.py)，2026-09-22 阅读</sub>
-
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)** — 九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。
-  <sub>`插件` · ★100+ · `Py` · `choice` · `score` · `noul` · 调用点 [`jevkit/client.py`](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读 · ⚠ `实测后未采用`</sub>
 
 - **[hyperedit](https://github.com/kevinbadi/hyperedit)** — 一个 AI 视频编辑器：把编辑指令路由到具体操作、目标片段和轨道，并以关键词路由作为兜底。
   <sub>`开源项目` · ★100+ · `TS` · `choice` · `noul` · 调用点 [`scripts/jev.js`](https://github.com/kevinbadi/hyperedit/blob/HEAD/scripts/jev.js)，2026-09-22 阅读 · ⚠ `无许可证`</sub>
@@ -205,7 +205,7 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
   <sub>`开源项目` · ★10+ · doeixd · `TS` · 调用点 [`examples/headline.ts`](https://github.com/doeixd/discern/blob/HEAD/examples/headline.ts)，2026-09-22 阅读</sub>
 
 - **[dsh-jev](https://github.com/buberlo/dsh-jev)** — 为 DeepSeek Harness 提供的、由 Jev 驱动的决策层。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
-  <sub>`插件` · ★10+ · buberlo · `TS` · 调用点 [`packages/dsh-jev/src/config.ts`](https://github.com/buberlo/dsh-jev/blob/HEAD/packages/dsh-jev/src/config.ts)，2026-09-24 阅读</sub>
+  <sub>`插件` · ★10+ · buberlo · `TS` · 调用点 [`packages/dsh-jev/src/config.ts`](https://github.com/buberlo/dsh-jev/blob/HEAD/packages/dsh-jev/src/config.ts)，2026-09-24 阅读 · ⚠ `已归档`</sub>
 
 - **[ego-jev](https://github.com/ZephyrDeng/ego-jev)** — 为 ego-browser 提供的 Jev（TypeSafe System One）内循环：每个 DOM 步骤一次约 0.4 秒的类型化决策，而不是一轮 LLM 对话。 <sub>(机翻)</sub>
   <sub>`插件` · ★10+ · zephyrdeng · `JS` · 调用点 [`skills/ego-jev/scripts/jev-loop.mjs`](https://github.com/ZephyrDeng/ego-jev/blob/HEAD/skills/ego-jev/scripts/jev-loop.mjs)，2026-09-24 阅读</sub>
@@ -233,6 +233,9 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 
 - **[jev-autopilot](https://github.com/arielweinberger/jev-autopilot)** — 这个演示用 Jev 自主驾驶无人机在随机城市里从 A 点飞到 B 点。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · arielweinberger · `TS` · 调用点 [`server/pilot.ts`](https://github.com/arielweinberger/jev-autopilot/blob/HEAD/server/pilot.ts)，2026-09-22 阅读 · ⚠ `无许可证`</sub>
+
+- **[jev-bot](https://github.com/bl888m/jev-bot)** — 由 JEV 驱动的股票、加密货币与迷因币市场决策机器人：输入状态，输出 BUY/SELL/HOLD/AVOID，默认模拟交易。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
+  <sub>`开源项目` · ★10+ · bl888m · `Py` · 调用点 [`jev_bot/jev.py`](https://github.com/bl888m/jev-bot/blob/HEAD/jev_bot/jev.py)，2026-09-24 阅读</sub>
 
 - **[jev-browser](https://github.com/tontoko/jev-browser)** — 一个基于 Jev 与 Playwright 的统一内核：带类型的 SDK、常驻 CLI，以及带原生浏览器操作和确定性断言的 MCP 服务器。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · tontoko · `JS` · 调用点 [`src/decision.ts`](https://github.com/tontoko/jev-browser/blob/HEAD/src/decision.ts)，2026-09-24 阅读</sub>
@@ -275,9 +278,6 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 
 - **[jev-mail-classifier](https://github.com/parth-kp/jev-mail-classifier)** — 用 Jev 给收件箱分类：打标、移动、标记、通知，全部配置驱动。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · parth-kp · `Py` · 调用点 [`jev_mail/providers/typesafe_direct.py`](https://github.com/parth-kp/jev-mail-classifier/blob/HEAD/jev_mail/providers/typesafe_direct.py)，2026-09-22 阅读</sub>
-
-- **[jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red)** — 在 PyBoy 上玩《宝可梦 红》：路线和算术交给代码，Jev 在分叉点约 100 毫秒做出选择，校准是实测的而不是假设的。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
-  <sub>`开源项目` · ★10+ · valentynkit · `Py` · 调用点 [`src/jpp/policy.py`](https://github.com/valentynkit/jev-plays-pokemon-red/blob/HEAD/src/jpp/policy.py)，2026-09-24 阅读</sub>
 
 - **[jev-reflex-autonomy-lab](https://github.com/khordoo/jev-reflex-autonomy-lab)** — 多无人机自主实验室：展示 Jev 的反射式决策，可选叠加 System 2 战略指导。 <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · khordoo · `TS` · 调用点 [`lib/reflex/jev-server.ts`](https://github.com/khordoo/jev-reflex-autonomy-lab/blob/HEAD/lib/reflex/jev-server.ts)，2026-09-22 阅读</sub>
@@ -447,9 +447,6 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study)** — 独立的 Jev 1.13.0 行为研究：报告、受控提示实验、原始结果与离线验证。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · rinnecoder · `Py` · 调用点 [`behavior_study.py`](https://github.com/RINNECODER/jev-behavior-study/blob/HEAD/behavior_study.py)，2026-09-22 阅读</sub>
 
-- **[jev-bot](https://github.com/bl888m/jev-bot)** — 由 JEV 驱动的股票、加密货币与迷因币市场决策机器人：输入状态，输出 BUY/SELL/HOLD/AVOID，默认模拟交易。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
-  <sub>`开源项目` · bl888m · `Py` · 调用点 [`jev_bot/jev.py`](https://github.com/bl888m/jev-bot/blob/HEAD/jev_bot/jev.py)，2026-09-24 阅读</sub>
-
 - **[jev-browse](https://github.com/0x7067/jev-browse)** — 以 Jev（TypeSafe）作为决策模型的浏览器自动化。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · 0x7067 · `JS` · 调用点 [`bundled/cli.mjs`](https://github.com/0x7067/jev-browse/blob/HEAD/bundled/cli.mjs)，2026-09-24 阅读</sub>
 
@@ -554,6 +551,9 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 
 - **[jev-plays](https://github.com/mansicer/jev-plays)** — 由 System One 模型玩 Craftax，LLM 负责设定目标：同一张地图上的五种智能体，从 Jev 直接操作原始动作到 LLM 控制每一步，用记录下来的对局进行比较。 <sub>(机翻)</sub>
   <sub>`基准测试` · mansicer · `Py` · 调用点 [`craftax_agent/jev_policy.py`](https://github.com/mansicer/jev-plays/blob/HEAD/craftax_agent/jev_policy.py)，2026-09-24 阅读</sub>
+
+- **[jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red)** — 在 PyBoy 上玩《宝可梦 红》：路线和算术交给代码，Jev 在分叉点约 100 毫秒做出选择，校准是实测的而不是假设的。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
+  <sub>`开源项目` · valentynkit · `Py` · 调用点 [`src/jpp/policy.py`](https://github.com/valentynkit/jev-plays-pokemon-red/blob/HEAD/src/jpp/policy.py)，2026-09-24 阅读</sub>
 
 - **[jev-pong](https://github.com/ably-labs/jev-pong)** — 一个每次模型决策球才走一步的乒乓游戏：Jev 对阵多个 LLM，经由 Vercel AI Gateway。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · ably-labs · `TS` · 调用点 [`lib/compare/compare-models.ts`](https://github.com/ably-labs/jev-pong/blob/HEAD/lib/compare/compare-models.ts)，2026-09-24 阅读</sub>

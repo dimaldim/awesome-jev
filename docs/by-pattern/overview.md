@@ -86,6 +86,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[openwork](https://github.com/different-ai/openwork)** — The open-source alternative to Claude Cowork (powered by opencode) <sub>(upstream description)</sub>
   <sub>`Jev-like alternative` · ★10k+ · different-ai · `TS` · cited file [`.github/scripts/jev-test-coverage-review.mjs`](https://github.com/different-ai/openwork/blob/HEAD/.github/scripts/jev-test-coverage-review.mjs), read 2026-09-22 · ⚠ `not Jev itself`</sub>
 
+- **[decider](https://github.com/Mapika/decider)** — A family of System One-style models fine-tuned from an open base for one-pass typed decisions.
+  <sub>`Jev-like alternative` · ★1k+ · mapika · `Py` · cited file [`decider/bench/loadtest.py`](https://github.com/Mapika/decider/blob/HEAD/decider/bench/loadtest.py), read 2026-09-22 · ⚠ `not Jev itself`</sub>
+
 - **[deep-searcher](https://github.com/zilliztech/deep-searcher)** — Open Source Deep Research Alternative to Reason and Search on Private Data. Written in Python. <sub>(upstream description)</sub>
   <sub>`Jev-like alternative` · ★1k+ · zilliztech · `Py` · cited file [`evaluation/jev_stopping/run_full100.py`](https://github.com/zilliztech/deep-searcher/blob/HEAD/evaluation/jev_stopping/run_full100.py), read 2026-09-22 · ⚠ `not Jev itself`</sub>
 
@@ -110,9 +113,6 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev)** — An independent semantic-if implementation that states up front it is unaffiliated with Jev or TypeSafe.
   <sub>`Jev-like alternative` · ★1k+ · `Py` · ⚠ `not Jev itself`</sub>
 
-- **[decider](https://github.com/Mapika/decider)** — A family of System One-style models fine-tuned from an open base for one-pass typed decisions.
-  <sub>`Jev-like alternative` · ★100+ · mapika · `Py` · cited file [`decider/bench/loadtest.py`](https://github.com/Mapika/decider/blob/HEAD/decider/bench/loadtest.py), read 2026-09-22 · ⚠ `not Jev itself`</sub>
-
 - **[djev](https://github.com/mmastrac/djev)** — Jev-style structured decisions on DiffusionGemma: the example server from vLLM PR 57250 <sub>(upstream description)</sub>
   <sub>`Jev-like alternative` · ★100+ · mmastrac · `Py` · cited file [`structured_server.py`](https://github.com/mmastrac/djev/blob/HEAD/structured_server.py), read 2026-09-22 · ⚠ `not Jev itself`</sub>
 
@@ -121,6 +121,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[jevbench](https://github.com/fstandhartinger/jevbench)** — JevBench v1 - a benchmark for Jev-class typed decision models: smart, cheap, fast, reliable, open. <sub>(upstream description)</sub>
   <sub>`Benchmark` · ★100+ · fstandhartinger · `Py` · call site [`jevbench/adapters/typesafe.py`](https://github.com/fstandhartinger/jevbench/blob/HEAD/jevbench/adapters/typesafe.py), read 2026-09-22</sub>
+
+- **[jevcore](https://github.com/PerryLink/jevcore)** — TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default. <sub>(upstream description)</sub>
+  <sub>`SDK` · ★100+ · perrylink · `TS` · call site [`packages/cli/src/runtime.ts`](https://github.com/PerryLink/jevcore/blob/HEAD/packages/cli/src/runtime.ts), read 2026-09-24</sub>
 
 - **[jevk5](https://github.com/allebee/jevk5)** — JevK5: open-weight alternative to TypeSafe Jev. Typed decisions with probabilities in one forward pass; Apache-2.0 weights and code. <sub>(upstream description)</sub>
   <sub>`Jev-like alternative` · ★100+ · allebee · `Py` · cited file [`jevk5/prompt.py`](https://github.com/allebee/jevk5/blob/HEAD/jevk5/prompt.py), read 2026-09-24 · ⚠ `not Jev itself`</sub>
@@ -187,9 +190,6 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[JevAny](https://github.com/SimpleJev/JevAny)** — JevAny: a calibrated decision layer for RL, agents and model harnesses that returns typed answers and option probabilities in one prefill pass — an open 27B model on a Qwen backbone, not Jev.
   <sub>`Jev-like alternative` · ★10+ · weitianxin · `Py` · cited file [`jevany/api.py`](https://github.com/SimpleJev/JevAny/blob/HEAD/jevany/api.py), read 2026-09-24 · ⚠ `not Jev itself`</sub>
-
-- **[jevcore](https://github.com/PerryLink/jevcore)** — TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default. <sub>(upstream description)</sub>
-  <sub>`SDK` · ★10+ · perrylink · `TS` · call site [`packages/cli/src/runtime.ts`](https://github.com/PerryLink/jevcore/blob/HEAD/packages/cli/src/runtime.ts), read 2026-09-24</sub>
 
 - **[jevify](https://github.com/fidecastro/jevify)** — Supersimple way to serve LLMs as a Jev-like endpoint <sub>(upstream description)</sub>
   <sub>`Jev-like alternative` · ★10+ · fidecastro · `Py` · cited file [`jevify/api/app.py`](https://github.com/fidecastro/jevify/blob/HEAD/jevify/api/app.py), read 2026-09-24 · ⚠ `not Jev itself`</sub>
@@ -266,11 +266,8 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[typesafe-ai](https://github.com/Twister915/typesafe-ai)** — Typed TypeSafe AI clients for Rust, with async and blocking backends and observable retries. <sub>(upstream description)</sub>
   <sub>`SDK` · ★10+ · twister915 · `Rs` · call site [`examples/tsg/main.rs`](https://github.com/Twister915/typesafe-ai/blob/HEAD/examples/tsg/main.rs), read 2026-09-22</sub>
 
-- **[typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark)** — A gateway that mimics the structured-output shape, used to benchmark against it.
-  <sub>`Benchmark` · ★10+ · iammrduncan · `TS` · call site [`packages/demos/lib/jev.ts`](https://github.com/iammrduncan/typesafe-ai-benchmark/blob/HEAD/packages/demos/lib/jev.ts), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
-
-- **[typesafe-sdk-go](https://github.com/Tangerg/typesafe-sdk-go)** — Go SDK for the TypeSafe AI API — typed questions in, probability distributions out. <sub>(upstream description)</sub>
-  <sub>`SDK` · ★10+ · tangerg · `Go` · call site [`client.go`](https://github.com/Tangerg/typesafe-sdk-go/blob/HEAD/client.go), read 2026-09-22</sub>
+- **[typesafe-ai-benchmark](https://github.com/iammrduncan/inference-benchmarks)** — A gateway that mimics the structured-output shape, used to benchmark against it.
+  <sub>`Benchmark` · ★10+ · iammrduncan · `TS` · call site [`packages/demos/lib/jev.ts`](https://github.com/iammrduncan/inference-benchmarks/blob/HEAD/packages/demos/lib/jev.ts), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
 
 - **[typesafe-sdk-go](https://github.com/atharvamhaske/typesafe-sdk-go)** — unofficial go sdk for typesafe ai. not affiliated with or endorsed by typesafe ai. a side project built to fill the missing go sdk gap, for the community to use. <sub>(upstream description)</sub>
   <sub>`SDK` · ★10+ · atharvamhaske · `Go` · call site [`typesafe.go`](https://github.com/atharvamhaske/typesafe-sdk-go/blob/HEAD/typesafe.go), read 2026-09-24</sub>
@@ -285,7 +282,7 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
   <sub>`SDK` · `TS` · `JS` · `choice` · `score` · `noul`</sub>
 
 - **[antigravity-mcp-semantic-search-with-typesafeai](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi)** — Fast semantic code search & diff sanity auditor for AI coding assistants (Antigravity, Cursor, Claude Code) powered by TypeSafe System One. <sub>(upstream description)</sub>
-  <sub>`Benchmark` · greenyamao · `Py` · call site [`mcp_server.py`](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi/blob/HEAD/mcp_server.py), read 2026-09-22 · ⚠ `no licence`</sub>
+  <sub>`Benchmark` · greenyamao · `Py` · call site [`mcp_server.py`](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi/blob/HEAD/mcp_server.py), read 2026-09-22</sub>
 
 - **[audio-jevlike](https://github.com/alperiox/audio-jevlike)** — Prosodia: an audio-native Jev-shaped decision model — typed calibrated decisions from speech, no ASR <sub>(upstream description)</sub>
   <sub>`Jev-like alternative` · alperiox · `Py` · cited file [`space/prosodia/evaluation/baselines.py`](https://github.com/alperiox/audio-jevlike/blob/HEAD/space/prosodia/evaluation/baselines.py), read 2026-09-24 · ⚠ `not Jev itself` `no licence`</sub>
@@ -434,8 +431,8 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[kojev](https://github.com/ItisNoMatter/kojev)** — Kotlin Multiplatform client for Jev that returns your own enum/sealed types instead of string keys. <sub>(upstream description)</sub>
   <sub>`SDK` · itisnomatter · `Kt` · call site [`src/commonTest/kotlin/io/github/itisnomatter/kojev/JevClientTest.kt`](https://github.com/ItisNoMatter/kojev/blob/HEAD/src/commonTest/kotlin/io/github/itisnomatter/kojev/JevClientTest.kt), read 2026-09-22</sub>
 
-- **[kunobi-jev](https://github.com/kunobi-ninja/kunobi-jev)** — Rust client for the TypeSafe System One API (Jev) <sub>(upstream description)</sub>
-  <sub>`SDK` · kunobi-ninja · `Rs` · call site [`src/client/mod.rs`](https://github.com/kunobi-ninja/kunobi-jev/blob/HEAD/src/client/mod.rs), read 2026-09-22</sub>
+- **[kunobi-jev](https://github.com/kunobi-ninja/kunobi-decision)** — Rust client for the TypeSafe System One API (Jev) <sub>(upstream description)</sub>
+  <sub>`SDK` · kunobi-ninja · `Rs` · call site [`src/client/mod.rs`](https://github.com/kunobi-ninja/kunobi-decision/blob/HEAD/src/client/mod.rs), read 2026-09-22</sub>
 
 - **[legalforecastbench](https://github.com/johnhughes3/LegalForecastBench)** — LegalForecast-MTD benchmark alpha and official evaluation workflows <sub>(upstream description)</sub>
   <sub>`Benchmark` · johnhughes3 · `Py` · call site [`legalforecast/jev/execution.py`](https://github.com/johnhughes3/LegalForecastBench/blob/HEAD/legalforecast/jev/execution.py), read 2026-09-22</sub>
@@ -526,6 +523,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[typesafe-sdk-dotnet](https://github.com/hardkoded/typesafe-sdk-dotnet)** — Unofficial .NET port of the TypeSafe AI client SDK (typed questions & answers) <sub>(upstream description)</sub>
   <sub>`SDK` · hardkoded · `C#` · call site [`src/TypeSafe.AI.Sdk/TypeSafeClient.cs`](https://github.com/hardkoded/typesafe-sdk-dotnet/blob/HEAD/src/TypeSafe.AI.Sdk/TypeSafeClient.cs), read 2026-09-24</sub>
+
+- **[typesafe-sdk-go](https://github.com/Tangerg/typesafe-sdk-go)** — Go SDK for the TypeSafe AI API — typed questions in, probability distributions out. <sub>(upstream description)</sub>
+  <sub>`SDK` · tangerg · `Go` · call site [`client.go`](https://github.com/Tangerg/typesafe-sdk-go/blob/HEAD/client.go), read 2026-09-22</sub>
 
 - **[typesafe-sdk-go](https://github.com/dwisiswant0/typesafe-sdk-go)** — Go SDK for TypeSafe AI. <sub>(upstream description)</sub>
   <sub>`SDK` · dwisiswant0 · `Go` · call site [`client.go`](https://github.com/dwisiswant0/typesafe-sdk-go/blob/HEAD/client.go), read 2026-09-24 · ⚠ `one commit`</sub>
@@ -665,6 +665,9 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 - **[Bifrost TypeSafe gateway route](https://github.com/maximhq/bifrost/tree/dev/core/providers/typesafe)** — A Go gateway provider that passes the native API through one-to-one, so the official SDKs work by changing only the base URL.
   <sub>`Project` · ★1k+ · `Go` · call site [`core/providers/typesafe/typesafe.go`](https://github.com/maximhq/bifrost/blob/HEAD/core/providers/typesafe/typesafe.go)</sub>
 
+- **[celesto](https://github.com/CelestoAI/celesto)** — Secure and persistent computer for AI agents -- build your own Grokbot, and Muse.
+  <sub>`Project` · ★1k+ · celestoai · `Py` · call site [`examples/pr-review-jev/models.py`](https://github.com/CelestoAI/celesto/blob/HEAD/examples/pr-review-jev/models.py), read 2026-09-22</sub>
+
 - **[laya-mlx](https://github.com/mizorewww/laya-mlx)** — Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. <sub>(upstream description)</sub>
   <sub>`Project` · ★1k+ · mizorewww · `Py` · call site [`laya_mlx/agent.py`](https://github.com/mizorewww/laya-mlx/blob/HEAD/laya_mlx/agent.py), read 2026-09-22</sub>
 
@@ -674,14 +677,14 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 - **[vellum-assistant](https://github.com/vellum-ai/vellum-assistant)** — An AI Assistant that’s easy to setup, does your work 24/7, knows your preferences and gets better over time. <sub>(upstream description)</sub>
   <sub>`Project` · ★1k+ · vellum-ai · `TS` · call site [`assistant/src/providers/jev/client.ts`](https://github.com/vellum-ai/vellum-assistant/blob/HEAD/assistant/src/providers/jev/client.ts), read 2026-09-22</sub>
 
+- **[agent-router](https://github.com/nidhi-singh02/agent-router)** — CLI that picks Cursor, Claude Code, Codex, or OpenCode + model/effort for a task, then launches it. Powered by Jev and Herdr <sub>(upstream description)</sub>
+  <sub>`Plugin` · ★100+ · nidhi-singh02 · `TS` · call site [`packages/router/src/semantic/typesafe-client.ts`](https://github.com/nidhi-singh02/agent-router/blob/HEAD/packages/router/src/semantic/typesafe-client.ts), read 2026-09-22</sub>
+
 - **[aiavatarkit](https://github.com/uezo/aiavatarkit)** — 🥰 Building AI-based conversational avatars lightning fast ⚡️💬 <sub>(upstream description)</sub>
   <sub>`Project` · ★100+ · uezo · `Py` · call site [`aiavatar/sts/vad/turn_end_gates/jev.py`](https://github.com/uezo/aiavatarkit/blob/HEAD/aiavatar/sts/vad/turn_end_gates/jev.py), read 2026-09-22</sub>
 
 - **[awesome-jev (fatwang2)](https://github.com/fatwang2/awesome-jev)** — A sibling directory whose submissions are reviewed by Jev itself, with a notably thorough list of multi-language community clients.
   <sub>`Project` · ★100+ · fatwang2 · `JS` · call site [`.github/workflows/jev-review.yml`](https://github.com/fatwang2/awesome-jev/blob/HEAD/.github/workflows/jev-review.yml)</sub>
-
-- **[celesto](https://github.com/CelestoAI/celesto)** — Secure and persistent computer for AI agents -- build your own Grokbot, and Muse.
-  <sub>`Project` · ★100+ · celestoai · `Py` · call site [`examples/pr-review-jev/models.py`](https://github.com/CelestoAI/celesto/blob/HEAD/examples/pr-review-jev/models.py), read 2026-09-22</sub>
 
 - **[crush-monitor](https://github.com/FerryCorleone/crush-monitor)** — Crush 好感监控器：用 Jev 分析微信聊天的情绪、意图和回复表现。本机部署，使用自己的 API Key。 <sub>(upstream description)</sub>
   <sub>`Project` · ★100+ · ferrycorleone · `TS` · call site [`server/provider-config.ts`](https://github.com/FerryCorleone/crush-monitor/blob/HEAD/server/provider-config.ts), read 2026-09-24</sub>
@@ -703,6 +706,9 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 
 - **[jev-chat-windows](https://github.com/jev-chat/jev-chat-windows)** — 微信（Windows 4.x）旁挂的回复辅助：窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动
   <sub>`Project` · ★100+ · jev-chat · `Py` · call site [`core/jev_client.py`](https://github.com/jev-chat/jev-chat-windows/blob/HEAD/core/jev_client.py), read 2026-09-22</sub>
+
+- **[jev-docs-zh](https://github.com/datawhalechina/jev-cookbook)** — Jev 模型（TypeSafe AI）官方使用文档的中文翻译 \| Unofficial Chinese translation of the official Jev (TypeSafe AI) docs — https://docs.typesafe.ai
+  <sub>`Project` · ★100+ · bald0wang · `Py` · call site [`dist/assets/search-index.js`](https://github.com/datawhalechina/jev-cookbook/blob/HEAD/dist/assets/search-index.js), read 2026-09-22</sub>
 
 - **[jev-experiments](https://github.com/dabit3/jev-experiments)** — Nader Dabit's collection of small Jev experiments, one per folder: a commit reviewer, a shell guard, a send guard, a log sentinel, instant search, reranking, a voice-turn detector and more.
   <sub>`Project` · ★100+ · dabit3 · `TS` · call site [`commit-sentry/src/jev.ts`](https://github.com/dabit3/jev-experiments/blob/HEAD/commit-sentry/src/jev.ts), read 2026-09-24 · ⚠ `no licence`</sub>
@@ -737,8 +743,8 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 - **[orchestkit](https://github.com/yonatangross/orchestkit)** — The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily. <sub>(upstream description)</sub>
   <sub>`Plugin` · ★100+ · yonatangross · `TS` · call site [`docs/audits/jev-session-category-heldout-2026-09-17/run_jev_b.mjs`](https://github.com/yonatangross/orchestkit/blob/HEAD/docs/audits/jev-session-category-heldout-2026-09-17/run_jev_b.mjs), read 2026-09-22</sub>
 
-- **[pi-fabric](https://github.com/monotykamary/pi-fabric)** — A programmable tool and agent runtime for Pi <sub>(upstream description)</sub>
-  <sub>`Project` · ★100+ · monotykamary · `TS` · call site [`src/jev/routes.ts`](https://github.com/monotykamary/pi-fabric/blob/HEAD/src/jev/routes.ts), read 2026-09-22</sub>
+- **[pi-fabric](https://github.com/fabric-runtime/pi-fabric)** — A programmable tool and agent runtime for Pi <sub>(upstream description)</sub>
+  <sub>`Project` · ★100+ · monotykamary · `TS` · call site [`src/jev/routes.ts`](https://github.com/fabric-runtime/pi-fabric/blob/HEAD/src/jev/routes.ts), read 2026-09-22</sub>
 
 - **[req_llm](https://github.com/agentjido/req_llm)** — Composable Elixir library for LLM interactions built on Req and Finch <sub>(upstream description)</sub>
   <sub>`Project` · ★100+ · agentjido · `Ex` · call site [`lib/req_llm/providers/typesafe.ex`](https://github.com/agentjido/req_llm/blob/HEAD/lib/req_llm/providers/typesafe.ex), read 2026-09-22</sub>
@@ -760,9 +766,6 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 
 - **[webctl](https://github.com/dorkitude/webctl)** — Smart web search CLI for agents, backed by Jev. Saves a lot of tokens. <sub>(upstream description)</sub>
   <sub>`Project` · ★100+ · dorkitude · `Go` · call site [`internal/jev/client.go`](https://github.com/dorkitude/webctl/blob/HEAD/internal/jev/client.go), read 2026-09-22</sub>
-
-- **[agent-router](https://github.com/nidhi-singh02/agent-router)** — CLI that picks Cursor, Claude Code, Codex, or OpenCode + model/effort for a task, then launches it. Powered by Jev and Herdr <sub>(upstream description)</sub>
-  <sub>`Plugin` · ★10+ · nidhi-singh02 · `TS` · call site [`packages/router/src/semantic/typesafe-client.ts`](https://github.com/nidhi-singh02/agent-router/blob/HEAD/packages/router/src/semantic/typesafe-client.ts), read 2026-09-22</sub>
 
 - **[ask-jev-skill](https://github.com/shantanugoel/ask-jev-skill)** — Skill for Hermes, and other agents, to ask typesafe's jev <sub>(upstream description)</sub>
   <sub>`Plugin` · ★10+ · shantanugoel · `Py` · call site [`scripts/askjev.py`](https://github.com/shantanugoel/ask-jev-skill/blob/HEAD/scripts/askjev.py), read 2026-09-22 · ⚠ `one commit`</sub>
@@ -824,9 +827,6 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 - **[jev-cli](https://github.com/shaharia-lab/jev-cli)** — Command-line tool for TypeSafe AI's Jev model. Ask yes/no, multiple-choice and rubric questions about any text and get calibrated probabilities back. Answers become exit codes for shells and CI, JSON for scripts, and MCP tools for AI agents. <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · shaharia-lab · `Rs` · call site [`crates/jev-cli/src/cli.rs`](https://github.com/shaharia-lab/jev-cli/blob/HEAD/crates/jev-cli/src/cli.rs), read 2026-09-24</sub>
 
-- **[jev-docs-zh](https://github.com/datawhalechina/jev-cookbook)** — Jev 模型（TypeSafe AI）官方使用文档的中文翻译 \| Unofficial Chinese translation of the official Jev (TypeSafe AI) docs — https://docs.typesafe.ai
-  <sub>`Project` · ★10+ · bald0wang · `Py` · call site [`dist/assets/search-index.js`](https://github.com/datawhalechina/jev-cookbook/blob/HEAD/dist/assets/search-index.js), read 2026-09-22</sub>
-
 - **[jev-foundation-models](https://github.com/peterfriese/system-one-foundation-models)** — A lightweight, native Swift 6 bridge integrating TypeSafe AI's Jev System One decision model into Apple's Foundation Models framework. <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · peterfriese · `Swift` · call site [`Sources/JevFoundationModels/JevLanguageModel.swift`](https://github.com/peterfriese/system-one-foundation-models/blob/HEAD/Sources/JevFoundationModels/JevLanguageModel.swift), read 2026-09-22</sub>
 
@@ -856,6 +856,9 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 
 - **[jev-seo](https://github.com/AkashPriyadarshii/jev-seo)** — 100% free ₹0 agent-first SEO & GEO CLI suite and MCP server in Rust replacing Semrush and OpenSEO via DuckDuckGo and TypeSafe Jev System One https://akashpriyadarshii.github.io/jev-seo/
   <sub>`Plugin` · ★10+ · akashpriyadarshii · `Rs` · call site [`src/engine.rs`](https://github.com/AkashPriyadarshii/jev-seo/blob/HEAD/src/engine.rs), read 2026-09-24</sub>
+
+- **[jev-skill-router](https://github.com/shimo4228/jev-skill-router)** — Claude Code plugin: asks TypeSafe Jev which installed skill fits each prompt and logs the answer (shadow-first). A working reference for the skill-suggestion cookbook on Claude Code — the README records why it is unlikely to help a strong model as a router. <sub>(earlier upstream description)</sub>
+  <sub>`Plugin` · ★10+ · shimo4228 · `Py` · call site [`scripts/jev_client.py`](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py), read 2026-09-22 · ⚠ `measured, not adopted`</sub>
 
 - **[jev-skill-suggester](https://github.com/win4r/jev-skill-suggester)** — 用 TypeSafe Jev 推荐已安装 Skill / Bounded installed-skill recommendations with TypeSafe Jev. Python CLI, Codex skill, bilingual docs and live examples. <sub>(upstream description)</sub>
   <sub>`Plugin` · ★10+ · win4r · `Py` · call site [`scripts/jev_client.py`](https://github.com/win4r/jev-skill-suggester/blob/HEAD/scripts/jev_client.py), read 2026-09-22 · ⚠ `one commit`</sub>
@@ -905,7 +908,7 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 - **[jevify](https://github.com/altryne/jevify)** — An agent skill to discover TypeSafe Jev opportunities, design typed questions, and learn from recent community experiments. <sub>(upstream description)</sub>
   <sub>`Plugin` · ★10+ · altryne · `Py` · call site [`scripts/jev_client.py`](https://github.com/altryne/jevify/blob/HEAD/scripts/jev_client.py), read 2026-09-22</sub>
 
-- **[jevloop](https://github.com/zjunlp/JevLoop)** — The agent loop where decisions don't cost a large language model call. Zero deps, runs offline, no API key needed. <sub>(upstream description)</sub>
+- **[jevloop](https://github.com/zjunlp/JevLoop)** — The agent loop where decisions don't cost a large language model call. Zero deps, runs offline, no API key needed. <sub>(earlier upstream description)</sub>
   <sub>`Project` · ★10+ · zjunlp · `TS` · call site [`bench/compare.ts`](https://github.com/zjunlp/JevLoop/blob/HEAD/bench/compare.ts), read 2026-09-22</sub>
 
 - **[jevocks](https://github.com/unicodeveloper/jevocks)** — Everyday Stocks Status with Jev <sub>(upstream description)</sub>
@@ -1193,9 +1196,6 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
 - **[jev-search](https://github.com/larguesa/jev-search)** — Experimental semantic line search with TypeSafe Jev via OpenRouter. Python CLI with no runtime dependencies. <sub>(upstream description)</sub>
   <sub>`Project` · larguesa · `Py` · call site [`jev_search.py`](https://github.com/larguesa/jev-search/blob/HEAD/jev_search.py), read 2026-09-22</sub>
 
-- **[jev-skill-router](https://github.com/shimo4228/jev-skill-router)** — Claude Code plugin: asks TypeSafe Jev which installed skill fits each prompt and logs the answer (shadow-first). A working reference for the skill-suggestion cookbook on Claude Code — the README records why it is unlikely to help a strong model as a router. <sub>(upstream description)</sub>
-  <sub>`Plugin` · shimo4228 · `Py` · call site [`scripts/jev_client.py`](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py), read 2026-09-22 · ⚠ `measured, not adopted`</sub>
-
 - **[jev-skills](https://github.com/laguagu/jev-skills)** — Practical agent skills and examples for building with Jev. API setup, routing, ranking, and evidence checks. <sub>(upstream description)</sub>
   <sub>`Plugin` · laguagu · `JS` · call site [`examples/decisions/run.mjs`](https://github.com/laguagu/jev-skills/blob/HEAD/examples/decisions/run.mjs), read 2026-09-24</sub>
 
@@ -1371,7 +1371,7 @@ Projects and plugins with code, 252 of them, whose only pattern is `overview` an
   <sub>`Project` · tholeg · `JS` · call site [`jev-player.js`](https://github.com/TholeG/typesafe-chess/blob/HEAD/jev-player.js), read 2026-09-22</sub>
 
 - **[typesafe-comment](https://github.com/Hexdigest123/typesafe-comment)** — Small Python package that uses typesafe.ai to evaluate code comments on certain heuristics <sub>(upstream description)</sub>
-  <sub>`Project` · hexdigest123 · `Py` · call site [`typesafe_comment/client.py`](https://github.com/Hexdigest123/typesafe-comment/blob/HEAD/typesafe_comment/client.py), read 2026-09-22</sub>
+  <sub>`Project` · hexdigest123 · `Py` · call site [`typesafe_comment/client.py`](https://github.com/Hexdigest123/typesafe-comment/blob/HEAD/typesafe_comment/client.py), read 2026-09-22 · ⚠ `archived`</sub>
 
 - **[typesafe-jev-examples](https://github.com/rajivkuriakose/typesafe-jev-examples)** — Worked examples for TypeSafe's Jev System One decision model, runnable today through OpenRouter <sub>(upstream description)</sub>
   <sub>`Project` · rajivkuriakose · `Py` · call site [`src/jevx/client.py`](https://github.com/rajivkuriakose/typesafe-jev-examples/blob/HEAD/src/jevx/client.py), read 2026-09-22</sub>
