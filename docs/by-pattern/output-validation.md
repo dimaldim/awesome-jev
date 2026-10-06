@@ -359,7 +359,7 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[limpet](https://github.com/noplan-inc/limpet)** — A Stop hook that stops your coding agent from stopping too early. Plain-language rules, judged by jev. <sub>(upstream description)</sub>
   <sub>`Plugin` · noplan-inc · `Py` · call site [`limpet.py`](https://github.com/noplan-inc/limpet/blob/HEAD/limpet.py), read 2026-09-22</sub>
 
-- **[lossless-rewrite](https://github.com/dttfrancesco/lossless-rewrite)** — AI text rewriting and document summarization with Jev checks for missing ideas and automatic repair. Local editor and CLI. <sub>(earlier upstream description)</sub>
+- **[lossless-rewrite](https://github.com/dttfrancesco/lossless-rewrite)** — AI text rewriting and document summarization with Jev checks for missing ideas and automatic repair. Local editor and CLI. <sub>(upstream description)</sub>
   <sub>`Project` · dttfrancesco · `TS` · call site [`lib/decision/client.ts`](https://github.com/dttfrancesco/lossless-rewrite/blob/HEAD/lib/decision/client.ts), read 2026-09-24</sub>
 
 - **[n8n-nodes-jev-classification](https://github.com/khmuhtadin/n8n-nodes-jev-classification)** — n8n community node for Jev by TypeSafe AI: classify, score and check text with calibrated probabilities. Parallel requests and multi-item batching. <sub>(upstream description)</sub>

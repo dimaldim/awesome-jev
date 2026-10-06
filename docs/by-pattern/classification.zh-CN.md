@@ -79,7 +79,7 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[Prism](https://github.com/irfndi/prism-liquidity-agent)** — 不直接让 Jev 下单。它判断 toxic flow、市场压力、均值回归之类的状态，再交给原来的策略。
   <sub>`开源项目` · ★100+ · `TS` · `choice` · `score` · 调用点 [`engine/jev-service.ts`](https://github.com/irfndi/prism-liquidity-agent/blob/HEAD/engine/jev-service.ts)，2026-09-22 阅读</sub>
 
-- **[taskuary](https://github.com/ldbumble/taskuary)** — 本地优先的 AI 任务中枢：把邮件、Teams、Slack 与报表汇成一条时间线。 <sub>(项目旧自述)</sub> <sub>(机翻)</sub>
+- **[taskuary](https://github.com/ldbumble/taskuary)** — 本地优先的 AI 任务中枢：把邮件、Teams、Slack 与报表汇成一条时间线。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`插件` · ★100+ · ldbumble · `Py` · 调用点 [`taskuary/jev.py`](https://github.com/ldbumble/taskuary/blob/HEAD/taskuary/jev.py)，2026-09-22 阅读</sub>
 
 - **[tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier)** — 基于 Jev 决策的税务文档分页分类器，在 261 种 IRS 表单上达到严格全对，每页约 $0.001。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
@@ -138,6 +138,9 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 
 - **[jev-sift](https://github.com/kbhuw/jev-sift)** — 先分类，再选择性阅读：可移植的批量文本分类插件与 MCP 工具。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`插件` · ★10+ · kbhuw · `JS` · 调用点 [`dist/server.mjs`](https://github.com/kbhuw/jev-sift/blob/HEAD/dist/server.mjs)，2026-09-22 阅读 · ⚠ `无许可证`</sub>
+
+- **[jev-tree](https://github.com/reachjalil/jev-tree)** — 在分类体系上做递归 Jev choice —— 在不突破 255 选项上限的前提下，从更多选项中做选择。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
+  <sub>`开源项目` · ★10+ · reachjalil · `TS` · 调用点 [`benchmarks/run.mjs`](https://github.com/reachjalil/jev-tree/blob/HEAD/benchmarks/run.mjs)，2026-09-22 阅读</sub>
 
 - **[jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed)** — 对一大堆文本（工单、评论、日志）批量回答同一个问题：把多个条目打包进每次请求，并称吞吐量是逐条请求的 32 倍、成本低 41%。 <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · collapseindex · `Py` · 调用点 [`src/jev_ultralightspeed/_settings.py`](https://github.com/collapseindex/jev-ultralightspeed/blob/HEAD/src/jev_ultralightspeed/_settings.py)，2026-09-24 阅读 · ⚠ `宣称未核实`</sub>
@@ -277,7 +280,7 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[jev-pr-labeler](https://github.com/1jehuang/jev-pr-labeler)** — 用 Jev 的类型化决策给 GitHub PR 打语义标签，依据概念范围而不是改动行数。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · 1jehuang · `Py` · 调用点 [`jev_labeler/classifier.py`](https://github.com/1jehuang/jev-pr-labeler/blob/HEAD/jev_labeler/classifier.py)，2026-09-24 阅读</sub>
 
-- **[jev-research-pipeline](https://github.com/shimo4228/jev-research-pipeline)** — 针对长期问题的每日研究监控：确定性的 Python 掌控流程，TypeSafe Jev 按问题筛选信息源，Qwen 撰写笔记（试点）。 <sub>(项目旧自述)</sub> <sub>(机翻)</sub>
+- **[jev-research-pipeline](https://github.com/shimo4228/jev-research-pipeline)** — 针对长期问题的每日研究监控：确定性的 Python 掌控流程，TypeSafe Jev 按问题筛选信息源，Qwen 撰写笔记（试点）。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · shimo4228 · `Py` · 调用点 [`src/jev_research_pipeline/jev/core.py`](https://github.com/shimo4228/jev-research-pipeline/blob/HEAD/src/jev_research_pipeline/jev/core.py)，2026-09-24 阅读</sub>
 
 - **[jev-resilience](https://github.com/Vicente-MD/jev-resilience)** — 给 Spring WebFlux 的非阻塞 Starter，实现一个语义熔断器来检测静默故障。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
@@ -301,10 +304,7 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[jev-trace-classifier](https://github.com/sypherin/jev-trace-classifier)** — 把 Jev 的 noul 原语应用到一个共谋语料库上。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`基准测试` · sypherin · `Py` · 调用点 [`jev_client.py`](https://github.com/sypherin/jev-trace-classifier/blob/HEAD/jev_client.py)，2026-09-22 阅读</sub>
 
-- **[jev-tree](https://github.com/reachjalil/jev-tree)** — 在分类体系上做递归 Jev choice —— 在不突破 255 选项上限的前提下，从更多选项中做选择。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
-  <sub>`开源项目` · reachjalil · `TS` · 调用点 [`benchmarks/run.mjs`](https://github.com/reachjalil/jev-tree/blob/HEAD/benchmarks/run.mjs)，2026-09-22 阅读</sub>
-
-- **[jev-triage](https://github.com/cephalization/jev-triage)** — 拉取并同步大型仓库以做 issue 分拣。 <sub>(项目旧自述)</sub> <sub>(机翻)</sub>
+- **[jev-triage](https://github.com/cephalization/jev-triage)** — 拉取并同步大型仓库以做 issue 分拣。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · cephalization · `TS` · 调用点 [`apps/api/src/worker/typesafe.ts`](https://github.com/cephalization/jev-triage/blob/HEAD/apps/api/src/worker/typesafe.ts)，2026-09-22 阅读</sub>
 
 - **[Jevatar](https://github.com/AppChainAI/Jevatar)** — 一个只用面部表情回复的 AI 伙伴：Jev（TypeSafe System One）判断你的消息，并挑选一个表情。 <sub>(项目自述)</sub> <sub>(机翻)</sub>

@@ -30,23 +30,23 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
 
   > Wired in but deliberately inert: by their own statement nothing Jev returns reaches a label, a cache row or an alert. Ships a golden fixture. A model to copy for how to trial a new model without betting production on it.
 
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
-  Nine agent skills plus a CLI covering model routing, memory filtering, turn retention, one-of-many skill selection and next-action choice.<br>
-  <sub>`Plugin` · ★1k+ · `Py` · `choice` · `score` · `noul` · [call site](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py), read 2026-09-22</sub>
-
-  **Caveats:** `measured, not adopted`
-
-  > Notable for publishing a use it dropped: Jev-summarised handoffs had worse recall than raw transcripts.
-
 - **[no-mistakes: Jev review pre-brief, measured and retired](https://github.com/kunchenguid/no-mistakes/pull/1165)**<br>
   One Score per candidate file to pre-brief code review — measured twice, then removed: more billed input for essentially no wall-clock gain, and offline replay showed the candidate list could not reach where review findings land.<br>
   <sub>`Benchmark` · ★1k+ · `Go` · `score` · author's conclusion: unfavourable (author-stated, not reproduced here)</sub>
 
   > Removed in PR #1165 (2026-09-22). Their offline measurement found the candidate generator excluded changed files by construction while nearly all review findings sit in changed files, and that per-file excerpts made the list less precise at higher token cost. The code is gone from the default branch, so this row cites the change that removed it.
 
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
+  Nine agent skills plus a CLI covering model routing, memory filtering, turn retention, one-of-many skill selection and next-action choice.<br>
+  <sub>`Plugin` · ★100+ · `Py` · `choice` · `score` · `noul` · [call site](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py), read 2026-09-22</sub>
+
+  **Caveats:** `measured, not adopted`
+
+  > Notable for publishing a use it dropped: Jev-summarised handoffs had worse recall than raw transcripts.
+
 - **[jev-skill-router](https://github.com/shimo4228/jev-skill-router)**<br>
-  Claude Code plugin: asks TypeSafe Jev which installed skill fits each prompt and logs the answer (shadow-first). A working reference for the skill-suggestion cookbook on Claude Code — the README records why it is unlikely to help a strong model as a router. <sub>(earlier upstream description)</sub><br>
-  <sub>`Plugin` · ★10+ · shimo4228 · `Py` · [call site](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py), read 2026-09-22</sub>
+  Claude Code plugin: asks TypeSafe Jev which installed skill fits each prompt and logs the answer (shadow-first). A working reference for the skill-suggestion cookbook on Claude Code — the README records why it is unlikely to help a strong model as a router. <sub>(upstream description)</sub><br>
+  <sub>`Plugin` · shimo4228 · `Py` · [call site](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py), read 2026-09-22</sub>
 
   **Caveats:** `measured, not adopted`
 
@@ -100,9 +100,9 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Read-only trading journal and review harness: Jev typed judgments, agent integration, and a reproducible finance benchmark. No orders, no advice. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ★10+ · myc0576 · `Py` · [call site](https://github.com/myc0576/SmartMoney-Cub/blob/HEAD/src/smartmoney_cub_harness/jev/direct.py), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
 
-- **[typesafe-ai-benchmark](https://github.com/iammrduncan/inference-benchmarks)**<br>
+- **[typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark)**<br>
   A gateway that mimics the structured-output shape, used to benchmark against it.<br>
-  <sub>`Benchmark` · ★10+ · iammrduncan · `TS` · [call site](https://github.com/iammrduncan/inference-benchmarks/blob/HEAD/packages/demos/lib/jev.ts), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
+  <sub>`Benchmark` · ★10+ · iammrduncan · `TS` · [call site](https://github.com/iammrduncan/typesafe-ai-benchmark/blob/HEAD/packages/demos/lib/jev.ts), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
 
 - **[windtunnel](https://github.com/nekuda-ai/WindTunnel)**<br>
   A WebMCP benchmark, measures WebMCP against other browser-agent interfaces. <sub>(upstream description)</sub><br>
@@ -117,6 +117,8 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
 - **[antigravity-mcp-semantic-search-with-typesafeai](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi)**<br>
   Fast semantic code search & diff sanity auditor for AI coding assistants (Antigravity, Cursor, Claude Code) powered by TypeSafe System One. <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · greenyamao · `Py` · [call site](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi/blob/HEAD/mcp_server.py), read 2026-09-22</sub>
+
+  **Caveats:** `no licence`
 
 - **[can-jev-bayes](https://github.com/TomRichner/can-jev-bayes)**<br>
   Jev Bayes, No? Testing TypeSafe AI's Jev against Bayesian-optimal strategies, and testing if Jev can effectivly use Bayesian priors. <sub>(upstream description)</sub><br>

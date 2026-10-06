@@ -65,9 +65,6 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[jev-mcp](https://github.com/jkudish/jev-mcp)** — 现成的 Agent 判断工具箱：事实核验、内容筛查、语义排序、分类和信息提取，各自独立成工具。
   <sub>`插件` · ★100+ · `JS` · `choice` · `score` · `noul` · 调用点 [`src/provider.ts`](https://github.com/jkudish/jev-mcp/blob/HEAD/src/provider.ts)，2026-09-22 阅读</sub>
 
-- **[jevals](https://github.com/openlayer-ai/jevals)** — 把智能体评测与护栏做成 Jev 决策：每条 trace 一次请求，成本不到一美分的零头。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
-  <sub>`开源项目` · ★100+ · openlayer-ai · `Py` · 调用点 [`src/jevals/backends/typesafe.py`](https://github.com/openlayer-ai/jevals/blob/HEAD/src/jevals/backends/typesafe.py)，2026-09-22 阅读</sub>
-
 - **[pi-jev](https://github.com/y0usaf/pi-jev)** — 给编程智能体做的决策层：一个可度量的工具调用闸门，外加一个返回校准答案的类型化提问。
   <sub>`插件` · ★100+ · y0usaf · `TS` · 调用点 [`src/client.ts`](https://github.com/y0usaf/pi-jev/blob/HEAD/src/client.ts)，2026-09-22 阅读</sub>
 
@@ -148,6 +145,9 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 
 - **[jev_antispam_bot](https://github.com/backmeupplz/jev_antispam_bot)** — 基于 grammY 的极简 Telegram 反垃圾机器人。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · backmeupplz · `TS` · 调用点 [`src/spam.ts`](https://github.com/backmeupplz/jev_antispam_bot/blob/HEAD/src/spam.ts)，2026-09-22 阅读</sub>
+
+- **[jevals](https://github.com/openlayer-ai/jevals)** — 把智能体评测与护栏做成 Jev 决策：每条 trace 一次请求，成本不到一美分的零头。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
+  <sub>`开源项目` · ★10+ · openlayer-ai · `Py` · 调用点 [`src/jevals/backends/typesafe.py`](https://github.com/openlayer-ai/jevals/blob/HEAD/src/jevals/backends/typesafe.py)，2026-09-22 阅读</sub>
 
 - **[JevPR](https://github.com/HexyeDEV/JevPR)** — 由 Jev 自动完成的 PR 风险审查。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · ★10+ · hexyedev · `Py` · 调用点 [`src/JevPR/providers/jev.py`](https://github.com/HexyeDEV/JevPR/blob/HEAD/src/JevPR/providers/jev.py)，2026-09-24 阅读</sub>
@@ -270,7 +270,7 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
   <sub>`插件` · clemensschartmueller · `Go` · 调用点 [`pkg/evaluator/typesafe.go`](https://github.com/ClemensSchartmueller/jev-guard/blob/HEAD/pkg/evaluator/typesafe.go)，2026-09-24 阅读</sub>
 
 - **[jev-guard](https://github.com/CMaintz/jev-guard)** — 在 LLM 智能体的工具调用执行前，交给 TypeSafe AI 的 Jev 审核——放行、阻止或挂起，不确定时安全失败。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
-  <sub>`开源项目` · cmaintz · `TS` · 调用点 [`src/providers/typesafe.ts`](https://github.com/CMaintz/jev-guard/blob/HEAD/src/providers/typesafe.ts)，2026-09-24 阅读 · ⚠ `已归档`</sub>
+  <sub>`开源项目` · cmaintz · `TS` · 调用点 [`src/providers/typesafe.ts`](https://github.com/CMaintz/jev-guard/blob/HEAD/src/providers/typesafe.ts)，2026-09-24 阅读</sub>
 
 - **[jev-guard](https://github.com/muratcakmak/jev-guard)** — 为 Claude Code 提供概率评分的护栏：拒绝违反规则的修改和未经要求的部署，并把文档路由到合适的位置。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`插件` · muratcakmak · `TS` · 调用点 [`scripts/jev-lint.ts`](https://github.com/muratcakmak/jev-guard/blob/HEAD/scripts/jev-lint.ts)，2026-09-24 阅读 · ⚠ `仅一次提交`</sub>

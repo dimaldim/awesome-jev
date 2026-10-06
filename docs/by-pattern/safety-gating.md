@@ -65,9 +65,6 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 - **[jev-mcp](https://github.com/jkudish/jev-mcp)** — A ready-made judgement toolbox for agents: fact verification, content screening, semantic ranking, classification and extraction as separate tools.
   <sub>`Plugin` · ★100+ · `JS` · `choice` · `score` · `noul` · call site [`src/provider.ts`](https://github.com/jkudish/jev-mcp/blob/HEAD/src/provider.ts), read 2026-09-22</sub>
 
-- **[jevals](https://github.com/openlayer-ai/jevals)** — Agent evals and guardrails as Jev decisions: one request per trace, a fraction of a cent, fast enough for the agent loop. Runs locally with Kev or Laya. <sub>(upstream description)</sub>
-  <sub>`Project` · ★100+ · openlayer-ai · `Py` · call site [`src/jevals/backends/typesafe.py`](https://github.com/openlayer-ai/jevals/blob/HEAD/src/jevals/backends/typesafe.py), read 2026-09-22</sub>
-
 - **[pi-jev](https://github.com/y0usaf/pi-jev)** — A decision layer for a coding agent: a measured tool-call gate plus a typed ask for calibrated answers.
   <sub>`Plugin` · ★100+ · y0usaf · `TS` · call site [`src/client.ts`](https://github.com/y0usaf/pi-jev/blob/HEAD/src/client.ts), read 2026-09-22</sub>
 
@@ -148,6 +145,9 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
 
 - **[jev_antispam_bot](https://github.com/backmeupplz/jev_antispam_bot)** — Minimal grammY Telegram anti-spam bot powered by TypeSafe Jev <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · backmeupplz · `TS` · call site [`src/spam.ts`](https://github.com/backmeupplz/jev_antispam_bot/blob/HEAD/src/spam.ts), read 2026-09-22</sub>
+
+- **[jevals](https://github.com/openlayer-ai/jevals)** — Agent evals and guardrails as Jev decisions: one request per trace, a fraction of a cent, fast enough for the agent loop. Runs locally with Kev or Laya. <sub>(upstream description)</sub>
+  <sub>`Project` · ★10+ · openlayer-ai · `Py` · call site [`src/jevals/backends/typesafe.py`](https://github.com/openlayer-ai/jevals/blob/HEAD/src/jevals/backends/typesafe.py), read 2026-09-22</sub>
 
 - **[JevPR](https://github.com/HexyeDEV/JevPR)** — PR Risk review, automated by Jev <sub>(upstream description)</sub>
   <sub>`Project` · ★10+ · hexyedev · `Py` · call site [`src/JevPR/providers/jev.py`](https://github.com/HexyeDEV/JevPR/blob/HEAD/src/JevPR/providers/jev.py), read 2026-09-24</sub>
@@ -270,7 +270,7 @@ A *call site* link opens the one file a row cites (`evidence.path`) at `HEAD` of
   <sub>`Plugin` · clemensschartmueller · `Go` · call site [`pkg/evaluator/typesafe.go`](https://github.com/ClemensSchartmueller/jev-guard/blob/HEAD/pkg/evaluator/typesafe.go), read 2026-09-24</sub>
 
 - **[jev-guard](https://github.com/CMaintz/jev-guard)** — Vets an LLM agent's tool calls through TypeSafe AI's Jev before they run — allow, block, or hold, failing safe on uncertainty. <sub>(upstream description)</sub>
-  <sub>`Project` · cmaintz · `TS` · call site [`src/providers/typesafe.ts`](https://github.com/CMaintz/jev-guard/blob/HEAD/src/providers/typesafe.ts), read 2026-09-24 · ⚠ `archived`</sub>
+  <sub>`Project` · cmaintz · `TS` · call site [`src/providers/typesafe.ts`](https://github.com/CMaintz/jev-guard/blob/HEAD/src/providers/typesafe.ts), read 2026-09-24</sub>
 
 - **[jev-guard](https://github.com/muratcakmak/jev-guard)** — Probability-scored guardrails for Claude Code: deny rule-breaking edits and unasked-for deploys, route your docs into each prompt, and check the final answer against the turn's own evidence. <sub>(upstream description)</sub>
   <sub>`Plugin` · muratcakmak · `TS` · call site [`scripts/jev-lint.ts`](https://github.com/muratcakmak/jev-guard/blob/HEAD/scripts/jev-lint.ts), read 2026-09-24 · ⚠ `one commit`</sub>

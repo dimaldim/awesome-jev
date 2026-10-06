@@ -12,7 +12,7 @@
   <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="docs/assets/readme-cover-zh-light-mobile.svg">
   <source media="(max-width: 767px)" srcset="docs/assets/readme-cover-zh-dark-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme-cover-zh-dark.svg">
-  <img src="docs/assets/readme-cover-zh-light.svg" alt="awesome-jev — Jev 决策图谱：1,210 条公开资源、1,207 条带日期的 HTTP 2xx 链接记录、1,076 条调用点引用记录。数字来自保存的记录，不代表当前链接可用或运行与性能测试通过。" width="100%">
+  <img src="docs/assets/readme-cover-zh-light.svg" alt="awesome-jev — Jev 决策图谱：1,211 条公开资源、1,207 条带日期的 HTTP 2xx 链接记录、1,077 条调用点引用记录。数字来自保存的记录，不代表当前链接可用或运行与性能测试通过。" width="100%">
 </picture>
 </a>
 
@@ -130,7 +130,7 @@
 | [并行扇出](#并行扇出) · **32** | [检索与排序](#检索与排序) · **64** |
 | [结构化抽取](#结构化抽取) · **17** | [分类](#分类) · **120** |
 | [机器学习特征抽取](#机器学习特征抽取) · **8** | [文档分拣](#文档分拣) · **20** |
-| [工单分拣](#工单分拣) · **8** | [内容评分](#内容评分) · **165** |
+| [工单分拣](#工单分拣) · **8** | [内容评分](#内容评分) · **166** |
 | [实时推荐](#实时推荐) · **1** | [总览](#总览) · **451** |
 
 ## 实测，而非宣称
@@ -157,23 +157,23 @@
 
   > 接进去了但故意不生效：按他们自己的说法，Jev 返回的任何东西都不会进入标签、缓存行或告警。带黄金测试集。想在不拿生产环境下注的前提下试新模型，这是值得照抄的做法。
 
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
-  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
-  <sub>`插件` · ★1k+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
-
-  **注意:** `实测后未采用`
-
-  > 值得一提的是它公开了一个被放弃的用法：用 Jev 做交接摘要的召回率，反而不如原始对话记录。
-
 - **[no-mistakes: Jev review pre-brief, measured and retired](https://github.com/kunchenguid/no-mistakes/pull/1165)**<br>
   为代码审查预选上下文：每个候选文件问一个 Score —— 测了两次后被移除：计费输入明显增加、耗时几乎没有收益；离线回放还表明，候选列表根本够不到审查发现实际所在的位置。<br>
   <sub>`基准测试` · ★1k+ · `Go` · `score` · 作者结论：不利（作者自述，未经本仓库复现）</sub>
 
   > 已在 PR #1165（2026-09-22）中移除。他们的离线测量发现：候选生成器从构造上就排除了被改动的文件，而几乎所有审查发现都落在被改动的文件上；按文件附带摘录反而让列表更不精确、token 成本更高。代码已不在默认分支上，所以这一行引用的是移除它的那次改动。
 
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
+  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
+  <sub>`插件` · ★100+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
+
+  **注意:** `实测后未采用`
+
+  > 值得一提的是它公开了一个被放弃的用法：用 Jev 做交接摘要的召回率，反而不如原始对话记录。
+
 - **[jev-skill-router](https://github.com/shimo4228/jev-skill-router)**<br>
-  Claude Code 插件：询问 Jev 哪个已安装技能适配当前提示，并记录答案（先影子运行）。 <sub>(项目旧自述)</sub> <sub>(机翻)</sub><br>
-  <sub>`插件` · ★10+ · shimo4228 · `Py` · [调用点](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py)，2026-09-22 阅读</sub>
+  Claude Code 插件：询问 Jev 哪个已安装技能适配当前提示，并记录答案（先影子运行）。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
+  <sub>`插件` · shimo4228 · `Py` · [调用点](https://github.com/shimo4228/jev-skill-router/blob/HEAD/scripts/jev_client.py)，2026-09-22 阅读</sub>
 
   **注意:** `实测后未采用`
 
@@ -329,15 +329,15 @@ _判断哪些工具调用和结果仍然相关，从而丢弃过期上下文。_
   一个 Claude Code 插件，用逐条决策取代压缩式摘要：过期的工具调用被丢弃或截断，保留下来的全部逐字不变。<br>
   <sub>`插件` · ★1k+ · tamaratran · `TS` · `noul` · [调用点](https://github.com/tamaratran/fast-jev-compaction/blob/HEAD/src/request.ts)，2026-09-22 阅读</sub>
 
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
-  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
-  <sub>`插件` · ★1k+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
-
-  **注意:** `实测后未采用`
-
 - **[compact-adviser](https://github.com/kunchenguid/compact-adviser)**<br>
   判断工作是否已完成或已记录，据此提示运行上下文压缩。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`开源项目` · ★100+ · kunchenguid · `TS` · [调用点](https://github.com/kunchenguid/compact-adviser/blob/HEAD/packages/claude-mod/lib/judge.ts)，2026-09-22 阅读</sub>
+
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
+  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
+  <sub>`插件` · ★100+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
+
+  **注意:** `实测后未采用`
 
 - **[jev-pruner](https://github.com/tamaratran/jev-pruner)**<br>
   在模型看到之前先修剪冗长的 shell 输出，每个片段问一个 Noul。<br>
@@ -355,9 +355,9 @@ _判断哪些工具调用和结果仍然相关，从而丢弃过期上下文。_
   用 Jev 做判断而不是生成：修剪过长的工具输出、筛查抓取页面中注入的指令、为“完成”把关。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`插件` · ★10+ · horusjiang · `TS` · [调用点](https://github.com/HorusJiang/dsh-jev-tools/blob/HEAD/src/config.ts)，2026-09-24 阅读</sub>
 
-- **[omp-jev-compaction](https://github.com/jerryfane/omp-jev-compaction)**<br>
-  给 omp 做的逐字保留式 Jev 打分上下文削减。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
-  <sub>`开源项目` · ★10+ · jerryfane · `TS` · [调用点](https://github.com/jerryfane/omp-jev-compaction/blob/HEAD/src/vendor/fast-jev/request.ts)，2026-09-22 阅读</sub>
+- **[fast-dev-compaction](https://github.com/leonaaardob/fast-dev-compaction)**<br>
+  Codex 插件：在会话压缩前后，由 Jev 引导逐字恢复上下文。移植自 tamaratran/fast-jev-compaction，适配 Codex 的生命周期钩子。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
+  <sub>`插件` · ★10+ · leonaaardob · `TS` · [调用点](https://github.com/leonaaardob/fast-dev-compaction/blob/HEAD/src/request.ts)，2026-09-24 阅读</sub>
 
 已显示 **10 / 34** 条 · [在单独页面查看全部 34 条 →](docs/by-pattern/context-compaction.zh-CN.md) · [在站点上筛选](https://kydlikebtc.github.io/awesome-jev/?p=context-compaction&lang=zh)
 
@@ -577,15 +577,15 @@ _选择由哪个下游模型或档位处理请求。_
   三个可独立安装的 Claude Code 插件 —— 护栏、模型路由、技能推荐 —— 各自带 hook 和测试。<br>
   <sub>`插件` · ★10k+ · `Py` · `TS` · `choice` · `score` · `noul` · [调用点](https://github.com/davila7/claude-code-templates/blob/HEAD/scripts/jev-spike.mjs)，2026-09-22 阅读</sub>
 
-- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
-  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
-  <sub>`插件` · ★1k+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
-
-  **注意:** `实测后未采用`
-
 - **[Astra-Ares](https://github.com/miuuyy/Astra-Ares)**<br>
   在 Codex 任务中为 GPT-6 自适应地调整推理力度，由 Jev 驱动，以减少 token 消耗。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`插件` · ★100+ · miuuyy · `JS` · [调用点](https://github.com/miuuyy/Astra-Ares/blob/HEAD/src/jev.mjs)，2026-09-24 阅读</sub>
+
+- **[hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)**<br>
+  九个 agent 技能加一个 CLI，覆盖模型路由、记忆过滤、对话轮保留、多选一技能选择和下一步动作决策。<br>
+  <sub>`插件` · ★100+ · `Py` · `choice` · `score` · `noul` · [调用点](https://github.com/kerpopule/hermes-jev-skills/blob/HEAD/jevkit/client.py)，2026-09-22 阅读</sub>
+
+  **注意:** `实测后未采用`
 
 - **[jev-codex-router](https://github.com/0xNatoshi/jev-codex-router)**<br>
   先让 Jev 判断这一轮编程任务有多难，再决定模型档位、推理深度和速度模式。<br>
@@ -651,7 +651,7 @@ _把大量问题（包括推测性的）打包进一次请求，再由代码挑�
 
 - **[jev-forge](https://github.com/zwliJay/jev-forge)**<br>
   面向 Jev 式决策模型的开源训练与推理栈。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
-  <sub>`Jev 替代实现` · ★100+ · zwlijay · `Py` · [引用文件](https://github.com/zwliJay/jev-forge/blob/HEAD/jevforge/bench_jev.py)，2026-09-22 阅读</sub>
+  <sub>`Jev 替代实现` · ★10+ · zwlijay · `Py` · [引用文件](https://github.com/zwliJay/jev-forge/blob/HEAD/jevforge/bench_jev.py)，2026-09-22 阅读</sub>
 
   **注意:** `并非 Jev 本身` · `仅一次提交`
 
@@ -831,13 +831,13 @@ _把自由文本转成数值特征，喂给下游的传统模型。_
   从人类反馈出发，构建经过校准的决策函数。<br>
   <sub>`开源项目` · ★100+ · sutro-sh · `Py` · [调用点](https://github.com/sutro-sh/jev-align/blob/HEAD/src/jev_align/jev.py)，2026-09-22 阅读</sub>
 
-- **[jev-curate](https://github.com/AkashPriyadarshii/jev-curate)**<br>
-  拿 Jev 筛训练数据。JSONL / Parquet 先做质量、相关性和风险判断，再决定哪些进后面的训练。<br>
-  <sub>`开源项目` · ★100+ · `Rs` · `score` · `noul` · [调用点](https://github.com/AkashPriyadarshii/jev-curate/blob/HEAD/src/client.rs)，2026-09-22 阅读</sub>
-
 - **[Prism](https://github.com/irfndi/prism-liquidity-agent)**<br>
   不直接让 Jev 下单。它判断 toxic flow、市场压力、均值回归之类的状态，再交给原来的策略。<br>
   <sub>`开源项目` · ★100+ · `TS` · `choice` · `score` · [调用点](https://github.com/irfndi/prism-liquidity-agent/blob/HEAD/engine/jev-service.ts)，2026-09-22 阅读</sub>
+
+- **[jev-curate](https://github.com/AkashPriyadarshii/jev-curate)**<br>
+  拿 Jev 筛训练数据。JSONL / Parquet 先做质量、相关性和风险判断，再决定哪些进后面的训练。<br>
+  <sub>`开源项目` · ★10+ · `Rs` · `score` · `noul` · [调用点](https://github.com/AkashPriyadarshii/jev-curate/blob/HEAD/src/client.rs)，2026-09-22 阅读</sub>
 
 - **[jev-board-lab](https://github.com/WebGrga/jev-board-lab)**<br>
   面向 Jev Board 数据集的交互式浏览与问题工作区。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
@@ -985,21 +985,19 @@ _在有序量表上给质量、风险或相关性打分。_
   一个 Android 回复副驾：从屏幕文本判断意图、时机和风险，OCR 与文案起草交给另外的模型。<br>
   <sub>`开源项目` · ★1k+ · `Java` · `choice` · `score` · `noul` · [调用点](https://github.com/jev-chat/jev-chat-jarvis/blob/HEAD/app/src/main/java/com/jev/probe/jev/JevQuestions.kt)，2026-09-22 阅读</sub>
 
-- **[jev-curate](https://github.com/AkashPriyadarshii/jev-curate)**<br>
-  拿 Jev 筛训练数据。JSONL / Parquet 先做质量、相关性和风险判断，再决定哪些进后面的训练。<br>
-  <sub>`开源项目` · ★100+ · `Rs` · `score` · `noul` · [调用点](https://github.com/AkashPriyadarshii/jev-curate/blob/HEAD/src/client.rs)，2026-09-22 阅读</sub>
-
-- **[jev-forge](https://github.com/zwliJay/jev-forge)**<br>
-  面向 Jev 式决策模型的开源训练与推理栈。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
-  <sub>`Jev 替代实现` · ★100+ · zwlijay · `Py` · [引用文件](https://github.com/zwliJay/jev-forge/blob/HEAD/jevforge/bench_jev.py)，2026-09-22 阅读</sub>
-
-  **注意:** `并非 Jev 本身` · `仅一次提交`
-
 - **[jev-lint](https://github.com/mizchi/jev-lint)**<br>
   用 Jev 打分器给代码中的文本做 lint。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`开源项目` · ★100+ · mizchi · `TS` · [调用点](https://github.com/mizchi/jev-lint/blob/HEAD/src/jev.ts)，2026-09-22 阅读</sub>
 
-已显示 **10 / 165** 条 · [在单独页面查看全部 165 条 →](docs/by-pattern/content-scoring.zh-CN.md) · [在站点上筛选](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=zh)
+- **[jev-review](https://github.com/NiazMorshed2007/jev-review)**<br>
+  一个本地优先的 MCP 插件，供编程智能体做持续的代码质量审查。<br>
+  <sub>`插件` · ★100+ · niazmorshed2007 · `TS` · [调用点](https://github.com/NiazMorshed2007/jev-review/blob/HEAD/src/jev/client.ts)，2026-09-22 阅读</sub>
+
+- **[jev-review](https://github.com/devagrawal09/jev-review)**<br>
+  代码审查前先过一遍 Jev，把高风险改动挑出来，再交给更贵的大模型或人。带本地看板。<br>
+  <sub>`开源项目` · ★100+ · `TS` · `choice` · `score` · `noul` · [调用点](https://github.com/devagrawal09/jev-review/blob/HEAD/src/review/codebase-judgments.ts)，2026-09-22 阅读</sub>
+
+已显示 **10 / 166** 条 · [在单独页面查看全部 166 条 →](docs/by-pattern/content-scoring.zh-CN.md) · [在站点上筛选](https://kydlikebtc.github.io/awesome-jev/?p=content-scoring&lang=zh)
 
 <sub>[↑ 场景索引](#pattern-index)</sub>
 
@@ -1079,7 +1077,7 @@ _介绍模型或整个领域，而非单一模式。_
 | **SDK** | **94** | 客户端库，官方与社区。 |
 | **平台集成** | **34** | 接入模型的网关、框架或平台路径。 |
 | **代码片段** | **4** | 本仓库内的小型可运行样例。 |
-| **开源项目** | **654** | 真正在调用 Jev 的应用或库。 |
+| **开源项目** | **655** | 真正在调用 Jev 的应用或库。 |
 | **插件** | **238** | 可安装的编辑器、智能体、MCP 集成。 |
 | **教程** | **9** | 带代码的分步教学材料。 |
 | **基准测试** | **71** | 实测。注意区分独立实测与厂商自报。 |
@@ -1095,7 +1093,7 @@ _介绍模型或整个领域，而非单一模式。_
 <details>
 <summary><b>查看可搜索站点预览</b></summary>
 
-<a href="https://kydlikebtc.github.io/awesome-jev/?lang=zh"><img src="https://kydlikebtc.github.io/awesome-jev/img/site-zh.png?v=18bc71512d930c7e" alt="可搜索的 Jev 目录：精选路径、筛选排序、带日期的来源证据与条目卡片" width="760"></a>
+<a href="https://kydlikebtc.github.io/awesome-jev/?lang=zh"><img src="https://kydlikebtc.github.io/awesome-jev/img/site-zh.png?v=35a4bb6e938b1faf" alt="可搜索的 Jev 目录：精选路径、筛选排序、带日期的来源证据与条目卡片" width="760"></a>
 
 <sub>点击条形即可筛选。另有两个视图：<a href="https://kydlikebtc.github.io/awesome-jev/?view=prims&lang=zh">三个原语</a> · <a href="https://kydlikebtc.github.io/awesome-jev/?view=compat&lang=zh">兼容性矩阵</a>。每个筛选条件和每个条目都是可分享的 URL。</sub>
 
@@ -1122,17 +1120,17 @@ _介绍模型或整个领域，而非单一模式。_
 
 ## 哪些经过核实，哪些没有
 
-- **链接检查** —— 有 1207 行记录了 HTTP 2xx 响应和 `checked` 日期，另有 3 行没有带日期的成功记录。检查日期因条目而异，过去成功不保证今天仍可访问。star 数和许可证也是仓库元数据的快照。
+- **链接检查** —— 有 1207 行记录了 HTTP 2xx 响应和 `checked` 日期，另有 4 行没有带日期的成功记录。检查日期因条目而异，过去成功不保证今天仍可访问。star 数和许可证也是仓库元数据的快照。
 
 - **来源与代码阅读** —— `evidence.path` 指向所读文件，`evidence.read_on` 记录声明的阅读日期，`evidence_none` 解释缺少文件证据的原因。阅读调用点与运行代码是两件事。摘要包含源项目描述与机翻，详见[方法与局限](docs/method.md)。
 
-- **摘要是谁的文字** —— 876 条摘要的英文原文就是被链接项目自己在 GitHub 上的描述，逐字相同，这些行标为 *(项目自述)*；15 条标为 *(项目旧自述)*：英文取自项目描述，但两者已不再相同。这些文字出自项目作者，中文摘要是其译文。2 条摘要标明为本目录撰写，317 条未作记录。每周刷新会把每条英文摘要与其仓库描述比对并标出相同者；只有人才能把摘要标为本目录撰写。 <sub>(机翻)</sub>
+- **摘要是谁的文字** —— 882 条摘要的英文原文就是被链接项目自己在 GitHub 上的描述，逐字相同，这些行标为 *(项目自述)*；9 条标为 *(项目旧自述)*：英文取自项目描述，但两者已不再相同。这些文字出自项目作者，中文摘要是其译文。3 条摘要标明为本目录撰写，317 条未作记录。每周刷新会把每条英文摘要与其仓库描述比对并标出相同者；只有人才能把摘要标为本目录撰写。 <sub>(机翻)</sub>
 
-- **中文是谁写的** —— 1210 行中有 195 行的中文摘要由人撰写；其余 1015 行由模型翻译，带有 `zh_machine`，并在中文 README、中文模式页面和站点的中文视图中逐条标为 *(机翻)*。[翻译队列](docs/zh-queue.md)列出等待有人替换的机翻：先是星标最高各行的全部机翻，再按星标从高到低列出被脚本计算的三项文本信号（比英文短得多、缺少英文里的数字、大部分是 ASCII 字符）中至少一项标出的其他机翻。信号只是对照比较，不是对译文的结论，README、模式页面和站点上的各行都不显示信号。认领方法见[认领翻译](CONTRIBUTING.md#claim-a-translation)；只有你自己写的译文才能去掉 `zh_machine`。 <sub>(机翻)</sub>
+- **中文是谁写的** —— 1211 行中有 195 行的中文摘要由人撰写；其余 1016 行由模型翻译，带有 `zh_machine`，并在中文 README、中文模式页面和站点的中文视图中逐条标为 *(机翻)*。[翻译队列](docs/zh-queue.md)列出等待有人替换的机翻：先是星标最高各行的全部机翻，再按星标从高到低列出被脚本计算的三项文本信号（比英文短得多、缺少英文里的数字、大部分是 ASCII 字符）中至少一项标出的其他机翻。信号只是对照比较，不是对译文的结论，README、模式页面和站点上的各行都不显示信号。认领方法见[认领翻译](CONTRIBUTING.md#claim-a-translation)；只有你自己写的译文才能去掉 `zh_machine`。 <sub>(机翻)</sub>
 
-- **调用点文本复查** —— 有 1076 行通过 `evidence` 记录了项目调用 Jev 的文件及其中匹配的字符串。另有 56 行记录的文件只表明项目采用了 Jev 的请求结构、并非基于 Jev 构建（所有 `alternative`——无论是自己提供这种结构，还是向 Jev 发送同样的请求作对比——以及由其他模型支撑的适配器），0 行记录的只是项目附带的示例；`evidence.kind` 标明属于哪一种。每周 [claims 任务](https://github.com/kydlikebtc/awesome-jev/actions/workflows/claims.yml) 检查这些字符串是否仍在默认分支，发现文本或文件缺失时报告。这些数字是已记录的证据数量，**不是最新 CI 通过数**。文本匹配不能证明调用实际执行、API 兼容或结果正确。脚本标出、需要人重读的引用列在[复核队列](docs/review-queue.md)。 <sub>(机翻)</sub>
+- **调用点文本复查** —— 有 1077 行通过 `evidence` 记录了项目调用 Jev 的文件及其中匹配的字符串。另有 56 行记录的文件只表明项目采用了 Jev 的请求结构、并非基于 Jev 构建（所有 `alternative`——无论是自己提供这种结构，还是向 Jev 发送同样的请求作对比——以及由其他模型支撑的适配器），0 行记录的只是项目附带的示例；`evidence.kind` 标明属于哪一种。每周 [claims 任务](https://github.com/kydlikebtc/awesome-jev/actions/workflows/claims.yml) 检查这些字符串是否仍在默认分支，发现文本或文件缺失时报告。这些数字是已记录的证据数量，**不是最新 CI 通过数**。文本匹配不能证明调用实际执行、API 兼容或结果正确。脚本标出、需要人重读的引用列在[复核队列](docs/review-queue.md)。 <sub>(机翻)</sub>
 
-- **用了哪些原语** —— 有 104 行在 `question_types` 中记录了有人读代码时确认调用的原语。另有 674 行带 `primitives_seen`，这是机器文本信号：每周刷新在该行所引的那一个文件中找到了某个原语的请求或回答结构（`"type": "choice"`、`Noul(`、`.noul`）。文件里出现这种结构不等于调用；其中 623 行没有 `question_types`，这个信号就是关于它们所用原语的全部记录。本目录的筛选、计数和规则都不会把它当作原语声明。 <sub>(机翻)</sub>
+- **用了哪些原语** —— 有 105 行在 `question_types` 中记录了有人读代码时确认调用的原语。另有 684 行带 `primitives_seen`，这是机器文本信号：每周刷新在该行所引的那一个文件中找到了某个原语的请求或回答结构（`"type": "choice"`、`Noul(`、`.noul`）。文件里出现这种结构不等于调用；其中 632 行没有 `question_types`，这个信号就是关于它们所用原语的全部记录。本目录的筛选、计数和规则都不会把它当作原语声明。 <sub>(机翻)</sub>
 
 - **本仓库未独立验证运行与性能** —— 所有目录条目默认都未经本仓库实测，没有 `code-untested` 标签也不代表已测试。被收录的基准是原作者的测量，本目录没有独立复现。仓库构建检查与安装包冒烟测试不运行这些集成，也不调用 Jev 在线 API；收录亦不代表安全审计。
 
@@ -1172,7 +1170,7 @@ _介绍模型或整个领域，而非单一模式。_
 
 | 文件 | 是什么 |
 | --- | --- |
-| [`catalog.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/catalog.json) | 1210 条目 |
+| [`catalog.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/catalog.json) | 1211 条目 |
 | [`retired.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/retired.json) | 2 已退休 |
 | [`compat.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/compat.json) | `docs/compatibility.md` 使用的平台兼容性数据 |
 | [`patterns.json`](https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/patterns.json) | 生成器与 MCP server 共用的决策模式分类 |

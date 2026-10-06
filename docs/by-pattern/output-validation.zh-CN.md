@@ -359,7 +359,7 @@ TypeSafe AI 自己发布、归在这个模式下的材料（标为 `official` �
 - **[limpet](https://github.com/noplan-inc/limpet)** — 一个 Stop 钩子，阻止编程智能体过早收工 —— 用大白话写规则，由 Jev 裁定。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`插件` · noplan-inc · `Py` · 调用点 [`limpet.py`](https://github.com/noplan-inc/limpet/blob/HEAD/limpet.py)，2026-09-22 阅读</sub>
 
-- **[lossless-rewrite](https://github.com/dttfrancesco/lossless-rewrite)** — AI 文本改写与文档摘要，由 Jev 检查是否遗漏了观点并自动修复。提供本地编辑器。 <sub>(项目旧自述)</sub> <sub>(机翻)</sub>
+- **[lossless-rewrite](https://github.com/dttfrancesco/lossless-rewrite)** — AI 文本改写与文档摘要，由 Jev 检查是否遗漏了观点并自动修复。提供本地编辑器。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
   <sub>`开源项目` · dttfrancesco · `TS` · 调用点 [`lib/decision/client.ts`](https://github.com/dttfrancesco/lossless-rewrite/blob/HEAD/lib/decision/client.ts)，2026-09-24 阅读</sub>
 
 - **[n8n-nodes-jev-classification](https://github.com/khmuhtadin/n8n-nodes-jev-classification)** — Jev 的 n8n 社区节点：带校准概率的文本分类、打分与检查。 <sub>(项目自述)</sub> <sub>(机翻)</sub>
