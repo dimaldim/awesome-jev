@@ -82,6 +82,12 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
   Reproducible benchmark for measuring Jev reranking quality, latency, and cost in RAG <sub>(upstream description)</sub><br>
   <sub>`Benchmark` · ★10+ · erendikmenn · `Py` · [call site](https://github.com/erendikmenn/jev-rag-benchmark/blob/HEAD/src/jev_rag_benchmark/rerankers.py), read 2026-09-22 · author's conclusion: favourable (author-stated, not reproduced here)</sub>
 
+- **[jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench)**<br>
+  An independent head-to-head against dedicated rerankers across fourteen datasets.<br>
+  <sub>`Benchmark` · ★10+ · anessbelbati · `Py` · [call site](https://github.com/anessbelbati/jev-rerank-bench/blob/HEAD/rerankers/jev.py), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
+
+  > An independent measurement rather than a vendor figure, and a direct comparison against purpose-built rerankers — the comparison that matters for the search-ranking pattern.
+
 - **[jev-robot-control](https://github.com/openroboto-ai/jev-robot-control)**<br>
   Jev against two LLMs on direct Cartesian control of an xArm7 in MuJoCo — intent, movement and gripper each step — with recorded responses, trajectories and replays. One seed-0 trial per controller, not a success rate.<br>
   <sub>`Benchmark` · ★10+ · openroboto-ai · `Py` · [call site](https://github.com/openroboto-ai/jev-robot-control/blob/HEAD/incremental-comparisons/20260919-193012-198478-0/sources/incremental_policy.py), read 2026-09-24 · author's conclusion: inconclusive (author-stated, not reproduced here)</sub>
@@ -283,12 +289,6 @@ Rows whose own author measured Jev for the use and concluded against it: a bench
 - **[jev-plays](https://github.com/mansicer/jev-plays)**<br>
   A System One model plays Craftax while an LLM sets the goals: five agents on the same map, from Jev on raw actions to an LLM controlling every step, compared in logged episodes.<br>
   <sub>`Benchmark` · mansicer · `Py` · [call site](https://github.com/mansicer/jev-plays/blob/HEAD/craftax_agent/jev_policy.py), read 2026-09-24</sub>
-
-- **[jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench)**<br>
-  An independent head-to-head against dedicated rerankers across fourteen datasets.<br>
-  <sub>`Benchmark` · anessbelbati · `Py` · [call site](https://github.com/anessbelbati/jev-rerank-bench/blob/HEAD/rerankers/jev.py), read 2026-09-22 · author's conclusion: mixed (author-stated, not reproduced here)</sub>
-
-  > An independent measurement rather than a vendor figure, and a direct comparison against purpose-built rerankers — the comparison that matters for the search-ranking pattern.
 
 - **[jev-routing-experiment](https://github.com/TokenTrim/jev-routing-experiment)**<br>
   Benchmarking TypeSafe's Jev decision model as a cost-efficient LLM router on RouterArena <sub>(upstream description)</sub><br>

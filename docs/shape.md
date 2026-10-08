@@ -4,7 +4,7 @@
 
 <sub>[awesome-jev](../README.md) · [中文](shape.zh-CN.md)</sub>
 
-Counts that describe this catalogue as a dataset, regenerated from `catalog.json` whenever it changes; the newest link check behind them is dated **2026-10-06**. They describe what the catalogue holds, which is what reached it through the sibling directories, this repository's discovery and its contributors, not the ecosystem at large. A star band is a popularity signal, not a quality verdict, and nothing here was run or reproduced by this repository. `python3 scripts/counts.py` prints the same numbers as text; the headline figures are on [the status page](status.md).
+Counts that describe this catalogue as a dataset, regenerated from `catalog.json` whenever it changes; the newest link check behind them is dated **2026-10-08**. They describe what the catalogue holds, which is what reached it through the sibling directories, this repository's discovery and its contributors, not the ecosystem at large. A star band is a popularity signal, not a quality verdict, and nothing here was run or reproduced by this repository. `python3 scripts/counts.py` prints the same numbers as text; the headline figures are on [the status page](status.md).
 
 ## Evidence by decision pattern
 
@@ -116,14 +116,14 @@ Rows of each kind per star band, from GitHub's count at the last weekly refresh;
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Official docs (`official-docs`) | 31 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | ★1k+ |
 | Integration (`integration`) | 34 | 24 | 8 | 6 | 1 | 3 | 5 | 1 | ★10+ |
-| Project (`project`) | 656 | 653 | 368 | 168 | 85 | 16 | 14 | 2 | under 10 |
-| Plugin (`plugin`) | 238 | 238 | 139 | 69 | 25 | 4 | 1 | 0 | under 10 |
+| Project (`project`) | 656 | 653 | 367 | 166 | 87 | 17 | 14 | 2 | under 10 |
+| Plugin (`plugin`) | 238 | 238 | 137 | 70 | 26 | 4 | 1 | 0 | under 10 |
 | SDK (`sdk`) | 94 | 93 | 72 | 16 | 4 | 0 | 1 | 0 | under 10 |
 | Snippet (`snippet`) | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 | Tutorial (`tutorial`) | 9 | 6 | 2 | 2 | 0 | 2 | 0 | 0 | ★10+ |
 | Article (`article`) | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 | Video (`video`) | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
-| Benchmark (`benchmark`) | 71 | 69 | 52 | 10 | 4 | 1 | 1 | 1 | under 10 |
+| Benchmark (`benchmark`) | 71 | 69 | 51 | 11 | 4 | 1 | 1 | 1 | under 10 |
 | Discussion (`discussion`) | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 | Jev-like alternative (`alternative`) | 59 | 58 | 14 | 23 | 13 | 6 | 2 | 0 | ★10+ |
 
@@ -175,7 +175,7 @@ Rows per pattern recording each of the 6 most recorded languages; the rest share
 
 ## Over time
 
-Collecting since 2026-09-30: 1 snapshot in `history/` so far, one per weekly refresh. A table of how the counts moved appears here from the third.
+Collecting since 2026-09-30: 2 snapshots in `history/` so far, one per weekly refresh. A table of how the counts moved appears here from the third.
 
 ---
 

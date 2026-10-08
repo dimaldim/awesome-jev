@@ -82,6 +82,12 @@
   可复现的基准：衡量 Jev 在 RAG 里的重排质量、延迟与成本。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
   <sub>`基准测试` · ★10+ · erendikmenn · `Py` · [调用点](https://github.com/erendikmenn/jev-rag-benchmark/blob/HEAD/src/jev_rag_benchmark/rerankers.py)，2026-09-22 阅读 · 作者结论：有利（作者自述，未经本仓库复现）</sub>
 
+- **[jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench)**<br>
+  与专用重排模型在 14 个数据集上的独立横评。<br>
+  <sub>`基准测试` · ★10+ · anessbelbati · `Py` · [调用点](https://github.com/anessbelbati/jev-rerank-bench/blob/HEAD/rerankers/jev.py)，2026-09-22 阅读 · 作者结论：好坏参半（作者自述，未经本仓库复现）</sub>
+
+  > 这是独立实测而非厂商数字，而且直接对比了专门做重排的模型 —— 这正是 search-ranking 模式该看的对比。
+
 - **[jev-robot-control](https://github.com/openroboto-ai/jev-robot-control)**<br>
   在 MuJoCo 中直接对 xArm7 做笛卡尔控制，对比 Jev 与两个 LLM：每一步选择意图、移动方向和夹爪动作，附原始响应、轨迹与回放。每个控制器只跑了一次（seed 0），不是成功率估计。 <sub>(机翻)</sub><br>
   <sub>`基准测试` · ★10+ · openroboto-ai · `Py` · [调用点](https://github.com/openroboto-ai/jev-robot-control/blob/HEAD/incremental-comparisons/20260919-193012-198478-0/sources/incremental_policy.py)，2026-09-24 阅读 · 作者结论：无定论（作者自述，未经本仓库复现）</sub>
@@ -283,12 +289,6 @@
 - **[jev-plays](https://github.com/mansicer/jev-plays)**<br>
   由 System One 模型玩 Craftax，LLM 负责设定目标：同一张地图上的五种智能体，从 Jev 直接操作原始动作到 LLM 控制每一步，用记录下来的对局进行比较。 <sub>(机翻)</sub><br>
   <sub>`基准测试` · mansicer · `Py` · [调用点](https://github.com/mansicer/jev-plays/blob/HEAD/craftax_agent/jev_policy.py)，2026-09-24 阅读</sub>
-
-- **[jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench)**<br>
-  与专用重排模型在 14 个数据集上的独立横评。<br>
-  <sub>`基准测试` · anessbelbati · `Py` · [调用点](https://github.com/anessbelbati/jev-rerank-bench/blob/HEAD/rerankers/jev.py)，2026-09-22 阅读 · 作者结论：好坏参半（作者自述，未经本仓库复现）</sub>
-
-  > 这是独立实测而非厂商数字，而且直接对比了专门做重排的模型 —— 这正是 search-ranking 模式该看的对比。
 
 - **[jev-routing-experiment](https://github.com/TokenTrim/jev-routing-experiment)**<br>
   在 RouterArena 上把 Jev 当作低成本 LLM 路由器做基准测试。 <sub>(项目自述)</sub> <sub>(机翻)</sub><br>
