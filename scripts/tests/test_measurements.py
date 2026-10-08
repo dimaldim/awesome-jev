@@ -31,7 +31,7 @@ import measurements
 import regenerate
 from readme import rows as readme_rows
 from readme.strings import EN, ZH, ZH_MACHINE
-from test_star_bands import moved_within_bands
+from test_star_bands import LABELS as STAR_LABELS, moved_within_bands
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SCHEMA = json.loads((ROOT / "schema" / "entry.schema.json").read_text())
@@ -239,12 +239,32 @@ class BenchmarksPageTest(unittest.TestCase):
                 for how in ("low", "high", "random"):
                     self.assertEqual(self.render(moved_within_bands(CATALOG, how), lang), page)
 
+    def star_cells(self, page: str) -> list[str]:
+        """The Stars cell of each row in the table of every measured report."""
+        lines = page.splitlines()
+        head = next(i for i, line in enumerate(lines) if line.startswith(("| Row |", "| 行 |")))
+        cells = []
+        for line in lines[head + 2 :]:
+            if not line.startswith("| "):
+                break
+            cells.append(line.split(" | ")[1])
+        return cells
+
     def test_no_exact_star_count_and_no_age(self):
+        # The Stars column is read cell by cell, against the band labels. A
+        # search of the whole page for "| 24 |" also matched jev-dspy-lab's n
+        # of 24, and failed the weekly refresh of 2026-10-07 when
+        # jev-benchmarks reached 24 stars; the copy below pins that case.
+        colliding = copy.deepcopy(CATALOG)
+        rows = measurements.measured(colliding)
+        rows[0]["stars"] = next(e["measurement"]["n"] for e in rows if (e["measurement"].get("n") or 0) >= 10)
+        for catalog in (CATALOG, colliding):
+            for lang in ("en", "zh"):
+                with self.subTest(lang=lang, colliding=catalog is colliding):
+                    cells = self.star_cells(self.render(catalog, lang))
+                    self.assertEqual(len(cells), len(measurements.measured(catalog)))
+                    self.assertLessEqual(set(cells), {*STAR_LABELS, "—"})
         page = self.render()
-        for entry in measurements.measured(CATALOG):
-            stars = entry.get("stars")
-            if stars and stars >= 10:
-                self.assertNotIn(f"| {stars} |", page)
         for word in ("days ago", "today", "yesterday", "weeks ago"):
             self.assertNotIn(word, page.lower())
 
