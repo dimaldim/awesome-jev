@@ -9340,9 +9340,9 @@
   {
     "slug": "decisionmodelhub-support-routing",
     "title": "Support-routing benchmark: 100 held-out cases",
-    "summary": "Compares Jev with Clef, Clef Flash and a GPT-6 Luna structured-output baseline on 100 held-out fictional support messages, each routed to one of five team labels; every case and recorded answer can be downloaded.",
+    "summary": "Compares Jev with Clef, Clef Flash, OpenAI's Decisions API and a GPT-6 Luna structured-output baseline on 100 held-out fictional support messages, each routed to one of five team labels; every case and recorded answer can be downloaded.",
     "summary_source": "curated",
-    "summary_zh": "在 100 条留出的虚构客服消息上，将 Jev 与 Clef、Clef Flash 以及 GPT-6 Luna 结构化输出基线进行对比：每条消息路由到五个团队标签之一；所有用例和各模型的作答记录均可下载。",
+    "summary_zh": "在 100 条留出的虚构客服消息上，将 Jev 与 Clef、Clef Flash、OpenAI 的 Decisions API 以及 GPT-6 Luna 结构化输出基线进行对比：每条消息路由到五个团队标签之一；所有用例和各模型的作答记录均可下载。",
     "zh_machine": true,
     "url": "https://decisionmodelhub.com/benchmarks/support-routing",
     "kind": "benchmark",
@@ -9365,6 +9365,7 @@
       "comparators": [
         "Clef",
         "Clef Flash",
+        "Decisions API",
         "GPT-6 Luna"
       ],
       "metrics": [
